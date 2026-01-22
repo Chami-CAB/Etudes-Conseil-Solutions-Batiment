@@ -5,21 +5,45 @@
   <title>Contact – DEC BIM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json" defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "DEC – Dessinateur Projeteur BIM",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Montpellier",
+    "addressRegion": "Occitanie",
+    "addressCountry": "FR"
+  },
+  "areaServed": "Hérault",
+  "description": "Dessinateur-projeteur BIM indépendant spécialisé en rénovation, extension et ERP catégorie 5.",
+  "url": "https://dec-bim.fr",
+  "sameAs": []
+}
+</script>
 </head>
 <body>
 
 <header>
-  <div class="container">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+    
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="assets/img/logo.png" alt="DEC BIM" style="height:42px;">
+      <strong style="font-size:18px;">DEC BIM</strong>
+    </div>
+
     <nav>
       <a href="index.html">Accueil</a>
       <a href="offres.html">Offres</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<section class="bg-light fade-in">
+<section class="bg-light fade-in reveal">
   <div class="container">
     <h1>Contact</h1>
 
@@ -43,8 +67,19 @@
 <footer>
   <div class="container">
     © DEC – Dessinateur Projeteur BIM · Montpellier
+	<a href="mentions-legales.html">Mentions légales</a>
   </div>
 </footer>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
 
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+</script>
 </body>
 </html>

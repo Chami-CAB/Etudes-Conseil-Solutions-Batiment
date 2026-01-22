@@ -125,3 +125,69 @@ nav a:hover::after {
 html {
   scroll-behavior: smooth;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0F172A;
+    color: #E5E7EB;
+  }
+
+  header, footer {
+    background: rgba(15,23,42,0.95);
+    border-color: #1E293B;
+  }
+
+  .card {
+    background: #020617;
+    border-color: #1E293B;
+  }
+
+  p, li {
+    color: #CBD5F5;
+  }
+
+  nav a, .btn {
+    color: #E5E7EB;
+    border-color: #E5E7EB;
+  }
+
+  .btn:hover {
+    background: #E5E7EB;
+    color: #020617;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(15,23,42,0.04), rgba(255,255,255,0)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(15,23,42,0.03),
+      rgba(15,23,42,0.03) 1px,
+      transparent 1px,
+      transparent 120px
+    );
+  z-index: -1;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

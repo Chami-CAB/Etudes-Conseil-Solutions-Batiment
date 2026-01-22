@@ -44,23 +44,168 @@
   </div>
 </header>
 
-<section class="bg-light fade-in reveal">
+<section class="contact-section fade-in reveal">
   <div class="container">
-    <h1>Contact</h1>
+    <h1>Contactez-moi</h1>
+    <p class="section-subtitle">Un projet ? Une question ? Parlons-en ensemble</p>
 
-    <div class="card">
-      <p>
-        <strong>DEC – Dessinateur Projeteur BIM</strong><br>
-        Montpellier – Hérault<br>
-        📧 diag@gmail.com
-      </p>
+    <div class="contact-wrapper">
+      <!-- Informations de contact -->
+      <div class="contact-info">
+        <div class="info-card">
+          <h2>DEC – Dessinateur Projeteur BIM</h2>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Zone d'intervention</strong>
+              <p>Montpellier et l'Hérault (34)<br>Intervention possible dans le Gard (30) et l'Aude (11)</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>diag@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📱</div>
+            <div>
+              <strong>Téléphone</strong>
+              <p><a href="tel:+33000000000">00 00 00 00 00</a></p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">⏰</div>
+            <div>
+              <strong>Disponibilité</strong>
+              <p>Lundi au Vendredi<br>9h00 - 18h00</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">💼</div>
+            <div>
+              <strong>Réponse</strong>
+              <p>Je réponds sous 24h ouvrées</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="expertise-card">
+          <h3>Mon expertise</h3>
+          <ul>
+            <li>Permis de construire & DP</li>
+            <li>ERP Catégorie 5</li>
+            <li>Modélisation BIM (Revit)</li>
+            <li>Rendu 3D photoréaliste</li>
+            <li>Plans techniques conformes</li>
+          </ul>
+        </div>
+      </div>
 
-      <form action="https://formspree.io/f/xxxxxx" method="POST">
-        <input type="text" name="name" placeholder="Nom" required><br><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
-        <textarea name="message" placeholder="Message" required></textarea><br><br>
-        <button class="btn" type="submit">Envoyer</button>
-      </form>
+      <!-- Formulaire -->
+      <div class="contact-form">
+        <div class="form-card">
+          <form id="contact-form" action="https://formspree.io/f/votre-id-formspree" method="POST">
+            <!-- Champ caché pour le sujet -->
+            <input type="hidden" name="_subject" value="Nouveau message depuis le site DEC">
+            
+            <!-- Champ anti-spam -->
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <!-- Champ pour redirection après succès (optionnel) -->
+            <input type="hidden" name="_next" value="https://votresite.com/merci">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom et prénom" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Société</label>
+                <input type="text" id="company" name="company" placeholder="Votre entreprise (optionnel)">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service concerné *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Sélectionnez un service</option>
+                <option value="erp">ERP Catégorie 5</option>
+                <option value="permis">Permis de Construire / Déclaration Préalable</option>
+                <option value="3d">Imagerie 3D / Rendu photoréaliste</option>
+                <option value="revit">Modélisation BIM - Revit</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="project-type">Type de projet</label>
+              <select id="project-type" name="project-type">
+                <option value="" selected>Nature du projet</option>
+                <option value="maison">Maison individuelle</option>
+                <option value="extension">Extension / Surélévation</option>
+                <option value="renovation">Rénovation</option>
+                <option value="commerce">Commerce / Boutique</option>
+                <option value="bureau">Bureaux</option>
+                <option value="restaurant">Restaurant / Café</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Votre message *</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre projet, vos besoins, vos contraintes, la localisation..." rows="6" required></textarea>
+              <div class="char-count"><span id="char-count">0</span> / 1000 caractères</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="file">Pièces jointes (optionnel)</label>
+              <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf">
+              <small class="file-info">Formats acceptés : PDF, JPG, PNG, DWG, DXF (max 10Mo)</small>
+            </div>
+            
+            <div class="form-group checkbox">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Je souhaite recevoir les actualités et conseils (optionnel)</label>
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary" id="submit-btn">
+                <span class="btn-text">Envoyer ma demande</span>
+                <span class="btn-loading" style="display:none;">Envoi en cours...</span>
+              </button>
+              <p class="form-note">* Champs obligatoires</p>
+            </div>
+            
+            <!-- Message de confirmation (caché par défaut) -->
+            <div id="form-success" style="display:none;">
+              <div class="success-message">
+                <div class="success-icon">✓</div>
+                <h3>Message envoyé avec succès !</h3>
+                <p>Je vous répondrai dans les plus brefs délais.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -81,6 +226,96 @@ const observer = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+// Gestion du formulaire contact
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contact-form');
+  const messageTextarea = document.getElementById('message');
+  const charCount = document.getElementById('char-count');
+  const submitBtn = document.getElementById('submit-btn');
+  const btnText = submitBtn.querySelector('.btn-text');
+  const btnLoading = submitBtn.querySelector('.btn-loading');
+  const formSuccess = document.getElementById('form-success');
+  
+  // Compteur de caractères
+  if (messageTextarea && charCount) {
+    messageTextarea.addEventListener('input', function() {
+      const length = this.value.length;
+      charCount.textContent = length;
+      
+      if (length > 1000) {
+        charCount.style.color = '#e74c3c';
+        this.value = this.value.substring(0, 1000);
+        charCount.textContent = 1000;
+      } else if (length > 800) {
+        charCount.style.color = '#f39c12';
+      } else {
+        charCount.style.color = '#888';
+      }
+    });
+  }
+  
+  // Gestion de la soumission
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Désactiver le bouton pendant l'envoi
+      submitBtn.disabled = true;
+      btnText.style.display = 'none';
+      btnLoading.style.display = 'inline';
+      
+      // Récupérer les données du formulaire
+      const formData = new FormData(this);
+      
+      // Envoyer via Formspree (ou votre backend)
+      fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          // Afficher le message de succès
+          contactForm.style.display = 'none';
+          formSuccess.style.display = 'block';
+          
+          // Réinitialiser le formulaire
+          contactForm.reset();
+          charCount.textContent = '0';
+        } else {
+          throw new Error('Erreur lors de l\'envoi');
+        }
+      })
+      .catch(error => {
+        alert('Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.');
+        console.error('Form error:', error);
+      })
+      .finally(() => {
+        // Réactiver le bouton
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline';
+        btnLoading.style.display = 'none';
+      });
+    });
+  }
+  
+  // Gestion dynamique du type de projet
+  const serviceSelect = document.getElementById('service');
+  const projectTypeSelect = document.getElementById('project-type');
+  
+  if (serviceSelect && projectTypeSelect) {
+    serviceSelect.addEventListener('change', function() {
+      // Réinitialiser le champ type de projet
+      projectTypeSelect.value = '';
+      
+      // Optionnel: ajuster les options selon le service
+      // Exemple: si ERP, montrer des options commerce/bureau/restaurant
+    });
+  }
+});
 </script>
 </body>
 </html>

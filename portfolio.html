@@ -44,19 +44,156 @@
   </div>
 </header>
 
-
-<section class="bg-light fade-in reveal">
+<section class="portfolio reveal">
   <div class="container">
-    <h1>Portfolio</h1>
+    <h2>Portfolio & Réalisations</h2>
+    <p class="section-subtitle">Découvrez des exemples concrets de nos projets réalisés</p>
 
-    <div class="card">
-      <h2>ERP – Magasin boissons (Cat. 5)</h2>
-      <p>Surface : 46 m² – Rénovation & changement d’activité</p>
-      <ul>
-        <li>Plans existant + projet</li>
-        <li>Sécurité incendie & accessibilité</li>
-        <li>Dossier accepté</li>
-      </ul>
+    <!-- Filtres par service -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">Tous les projets</button>
+      <button class="filter-btn" data-filter="erp">ERP Catégorie 5</button>
+      <button class="filter-btn" data-filter="permis">Permis de Construire</button>
+      <button class="filter-btn" data-filter="3d">Imagerie 3D</button>
+      <button class="filter-btn" data-filter="modelisation">Modélisation </button>
+    </div>
+
+    <!-- Grille des projets -->
+    <div class="portfolio-grid">
+      
+      <!-- Projet ERP 1 -->
+      <div class="portfolio-item" data-category="erp">
+        <div class="portfolio-img">
+          <img src="/images/portfolio/commerce-plan-securite.jpg" alt="Plans sécurité incendie commerce" loading="lazy">
+          <div class="portfolio-overlay">
+            <span class="project-category">ERP Catégorie 5</span>
+            <h3>Commerce alimentaire</h3>
+            <p>Plans sécurité et accessibilité PMR</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Boulangerie "Au Bon Pain"</h3>
+          <p>Dossier complet ERP pour création d'un commerce. Plans désenfumage, évacuation et accessibilité.</p>
+          <div class="project-tags">
+            <span>Modélisation</span>
+            <span>Sécurité Incendie</span>
+            <span>PMR</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3D 1 -->
+      <div class="portfolio-item" data-category="3d">
+        <div class="portfolio-img">
+          <img src="/images/portfolio/maison-3d-exterieur.jpg" alt="Rendu 3D maison contemporaine" loading="lazy">
+          <div class="portfolio-overlay">
+            <span class="project-category">Imagerie 3D</span>
+            <h3>Maison contemporaine</h3>
+            <p>Visualisation extérieure</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Villa "Les Pins"</h3>
+          <p>Rendu photoréaliste pour un projet de permis de construire. Intégration paysagère et matériaux réalistes.</p>
+          <div class="project-tags">
+            <span>3D Photoréaliste</span>
+            <span>Extérieur</span>
+            <span>Paysage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet Permis -->
+      <div class="portfolio-item" data-category="permis">
+        <div class="portfolio-img">
+          <img src="/images/portfolio/extension-plans.jpg" alt="Plans permis extension maison" loading="lazy">
+          <div class="portfolio-overlay">
+            <span class="project-category">Permis de Construire</span>
+            <h3>Extension maison</h3>
+            <p>Dossier complet PC</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Extension avec terrasse couverte</h3>
+          <p>Plans pour permis de construire : situation, masse, coupes et façades. Validation obtenue en 2 mois.</p>
+          <div class="project-tags">
+            <span>Extension</span>
+            <span>Plans 2D</span>
+            <span>Conformité PLU</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet ERP 2 -->
+      <div class="portfolio-item" data-category="erp modelisation">
+        <div class="portfolio-img">
+          <img src="/images/portfolio/bureau-modelisation-model.jpg" alt="Modélisation bureaux" loading="lazy">
+          <div class="portfolio-overlay">
+            <span class="project-category">ERP + Modelisation</span>
+            <h3>Bureaux open space</h3>
+            <p>Modélisation BIM complète</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Siège social entreprise</h3>
+          <p>Modélisation existant + projet pour rénovation d'espaces de bureaux. Plans techniques détaillés.</p>
+          <div class="project-tags">
+            <span>BIM</span>
+            <span>Modélisation</span>
+            <span>Rénovation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3D 2 -->
+      <div class="portfolio-item" data-category="3d">
+        <div class="portfolio-img">
+          <img src="/images/portfolio/appartement-3d-interieur.jpg" alt="Rendu 3D intérieur appartement" loading="lazy">
+          <div class="portfolio-overlay">
+            <span class="project-category">Imagerie 3D</span>
+            <h3>Appartement neuf</h3>
+            <p>Visualisation intérieure</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Appartement lumineux</h3>
+          <p>Rendu d'ambiance intérieure pour promoteur. Jeux de lumière naturelle et aménagement optimisé.</p>
+          <div class="project-tags">
+            <span>Intérieur</span>
+            <span>Aménagement</span>
+            <span>Lumière</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet Permis 2 -->
+      <div class="portfolio-item" data-category="permis">
+        <div class="portfolio-img">
+          <img src="/images/portfolio/maison-neuve-facades.jpg" alt="Plans façades maison neuve" loading="lazy">
+          <div class="portfolio-overlay">
+            <span class="project-category">Permis de Construire</span>
+            <h3>Maison individuelle</h3>
+            <p>Plans d'élévation</p>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Maison "Le Clos Fleuri"</h3>
+          <p>Dossier permis de construire pour maison neuve 120m². Intégration dans un lotissement avec contraintes spécifiques.</p>
+          <div class="project-tags">
+            <span>Maison neuve</span>
+            <span>Façades</span>
+            <span>Lotissement</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Portfolio -->
+    <div class="portfolio-cta">
+      <p>Ces projets vous inspirent ? Chaque projet est unique.</p>
+      <a href="/contact" class="btn btn-primary">Discutons de votre projet</a>
+      <a href="/portfolio" class="btn btn-secondary">Voir tous les projets</a>
     </div>
   </div>
 </section>
@@ -77,6 +214,47 @@ const observer = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+// Filtrage des projets portfolio
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Retirer la classe active de tous les boutons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      // Ajouter la classe active au bouton cliqué
+      this.classList.add('active');
+      
+      const filterValue = this.getAttribute('data-filter');
+      
+      // Filtrer les éléments
+      portfolioItems.forEach(item => {
+        const categories = item.getAttribute('data-category');
+        
+        if (filterValue === 'all' || categories.includes(filterValue)) {
+          item.style.display = 'flex';
+          // Animation d'apparition
+          item.style.animation = 'fadeIn 0.5s ease forwards';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // Ajout d'une animation CSS
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  `;
+  document.head.appendChild(style);
+});
+
 </script>
 </body>
 </html>

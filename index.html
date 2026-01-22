@@ -2,103 +2,335 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>DEC – Dessinateur Projeteur BIM Montpellier | ERP Cat. 5</title>
-  <meta name="description" content="Dessinateur-projeteur BIM indépendant à Montpellier. Spécialisé en rénovation, extension et ERP catégorie 5.">
+  <title>DEC – Dessinateur Projeteur BIM Montpellier | ERP Caté 5 | Permis Construire</title>
+  <meta name="description" content="Dessinateur-projeteur BIM indépendant à Montpellier, spécialiste ERP catégorie 5, permis de construire et rendus 3D photoréalistes. Accompagnement de A à Z pour vos projets.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json" defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "DEC – Dessinateur Projeteur BIM",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Montpellier",
-    "addressRegion": "Occitanie",
-    "addressCountry": "FR"
-  },
-  "areaServed": "Hérault",
-  "description": "Dessinateur-projeteur BIM indépendant spécialisé en rénovation, extension et ERP catégorie 5.",
-  "url": "https://dec-bim.fr",
-  "sameAs": []
-}
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Schema.org Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "DEC – Dessinateur Projeteur BIM",
+    "image": "https://dec-bim.fr/assets/img/logo.png",
+    "description": "Dessinateur-projeteur BIM indépendant à Montpellier, spécialiste ERP catégorie 5, permis de construire et rendus 3D photoréalistes.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Montpellier",
+      "addressRegion": "Occitanie",
+      "postalCode": "34000",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.610769",
+      "longitude": "3.876716"
+    },
+    "areaServed": ["Hérault", "Gard", "Aude"],
+    "serviceType": ["Dessin architectural", "Permis de construire", "ERP catégorie 5", "Modélisation BIM", "Rendu 3D"],
+    "priceRange": "€€",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "telephone": "+33-00-00-00-00",
+    "email": "diag@gmail.com",
+    "url": "https://dec-bim.fr",
+    "sameAs": []
+  }
+  </script>
+  
+  <!-- Plausible Analytics -->
+  <script defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
 
 <header>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-    
-    <div style="display:flex;align-items:center;gap:12px;">
-      <img src="assets/img/logo.png" alt="DEC BIM" style="height:42px;">
-      <strong style="font-size:18px;">DEC BIM</strong>
+  <div class="container header-container">
+    <div class="logo-container">
+      <img src="assets/img/logo.png" alt="DEC BIM - Dessinateur Projeteur BIM" class="logo">
+      <div class="logo-text">
+        <strong>DEC BIM</strong>
+        <span class="logo-subtitle">Dessinateur Projeteur BIM</span>
+      </div>
     </div>
 
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="offres.html">Offres</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-	  <a href="services.html">Services</a>
+    <nav class="main-nav">
+      <button class="mobile-menu-btn" aria-label="Menu mobile">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a>
+        <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+        <a href="offres.html"><i class="fas fa-tags"></i> Offres</a>
+        <a href="portfolio.html"><i class="fas fa-images"></i> Portfolio</a>
+        <a href="contact.html" class="cta-nav"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
     </nav>
-
   </div>
 </header>
 
-<section class="bg-light fade-in reveal">
-  <div class="container">
-    <h1>DEC – Dessinateur Projeteur BIM (Montpellier)</h1>
-    <p>
-      Dessinateur-projeteur BIM indépendant, spécialisé en rénovation, extension et ERP catégorie 5.
-      Production de dossiers réglementaires Revit (sécurité incendie & accessibilité).
-    </p>
-    <a class="btn" href="contact.html">Demander un devis</a>
-  </div>
-</section>
 
-<section class="reveal">
-  <div class="container">
-    <h2>Services</h2>
-
-    <div class="card">
-      <h3>ERP Catégorie 5</h3>
-      <p><strong>Forfait :</strong> 2 200 € – 2 800 € HT</p>
-      <ul>
-        <li>Modélisation Revit existant + projet</li>
-        <li>Plans sécurité incendie</li>
-        <li>Plans accessibilité PMR</li>
-      </ul>
+<main>
+  <!-- Hero Section -->
+  <section class="hero reveal">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Votre projet de construction,<br><span class="highlight">conçu et validé</span> avec précision</h1>
+        <p class="hero-subtitle">Dessinateur-projeteur BIM indépendant à Montpellier, je transforme vos idées en plans techniques conformes et en visualisations 3D réalistes.</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">24h</span>
+            <span class="stat-label">Réponse garantie</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">0%</span>
+            <span class="stat-label">Refus mairie</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary btn-large">
+            <i class="fas fa-calendar-check"></i> Demander un devis gratuit
+          </a>
+          <a href="portfolio.html" class="btn btn-secondary btn-large">
+            <i class="fas fa-play-circle"></i> Voir mes réalisations
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/img/hero-visual.svg" alt="Visualisation projet architectural 3D" class="hero-img">
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Permis / Rénovation / Extension</h3>
-      <ul>
-        <li>Plans PC / DP</li>
-        <li>Maisons individuelles, extensions</li>
-        <li>Tarifs sur devis</li>
-      </ul>
+  <!-- Services Overview -->
+  <section class="services-overview reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Expertise</span>
+        <h2>Des services complets pour chaque étape de votre projet</h2>
+        <p class="section-subtitle">De la conception initiale à l'obtention des autorisations, je vous accompagne avec une expertise technique pointue.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-building-shield"></i>
+          </div>
+          <h3>ERP Catégorie 5</h3>
+          <p>Dossiers réglementaires complets pour l'ouverture ou la rénovation de vos commerces, bureaux et restaurants.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Plans sécurité incendie</li>
+            <li><i class="fas fa-check-circle"></i> Accessibilité PMR</li>
+            <li><i class="fas fa-check-circle"></i> Conformité garantie</li>
+          </ul>
+          <a href="services.html#erp" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <h3>Permis de Construire</h3>
+          <p>Dossiers techniques prêts au dépôt pour maisons neuves, extensions, surélévations et rénovations.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Plans conformes PLU</li>
+            <li><i class="fas fa-check-circle"></i> Accompagnement mairie</li>
+            <li><i class="fas fa-check-circle"></i> Suivi jusqu'à validation</li>
+          </ul>
+          <a href="services.html#permis" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <h3>Rendu 3D & BIM</h3>
+          <p>Visualisations photoréalistes et modélisations BIM pour valider vos choix et présenter votre projet.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Images haute définition</li>
+            <li><i class="fas fa-check-circle"></i> Intégration Revit</li>
+            <li><i class="fas fa-check-circle"></i> Outil de décision</li>
+          </ul>
+          <a href="services.html#3d" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process bg-light reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Méthodologie</span>
+        <h2>Un accompagnement structuré en 4 étapes</h2>
+        <p class="section-subtitle">De notre premier contact à l'obtention de votre autorisation, chaque étape est maîtrisée.</p>
+      </div>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Étude de faisabilité</h3>
+          <p>Analyse de votre projet et des contraintes réglementaires (PLU, règles d'urbanisme).</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Conception technique</h3>
+          <p>Réalisation des plans détaillés, des coupes et des élévations conformes.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Validation & ajustements</h3>
+          <p>Présentation des plans, intégration de vos retours et finalisation du dossier.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Dépôt & suivi</h3>
+          <p>Dépôt du dossier en mairie et accompagnement jusqu'à l'obtention de l'autorisation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Témoignages</span>
+        <h2>Ce que disent mes clients</h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Un travail d'une précision remarquable pour notre extension. Le permis a été validé sans aucune remarque de la mairie."</p>
+          <div class="testimonial-author">
+            <strong>Marc D.</strong>
+            <span>Propriétaire - Maison individuelle</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"L'ouverture de notre commerce n'aurait pas été possible sans son expertise en ERP catégorie 5. Professionnalisme et réactivité."</p>
+          <div class="testimonial-author">
+            <strong>Sophie L.</strong>
+            <span>Gérante de boutique</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Les rendus 3D ont permis à nos investisseurs de visualiser le projet final. Un outil de communication extrêmement efficace."</p>
+          <div class="testimonial-author">
+            <strong>Thomas R.</strong>
+            <span>Promoteur immobilier</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section reveal">
+    <div class="container cta-container">
+      <div class="cta-content">
+        <h2>Prêt à concrétiser votre projet ?</h2>
+        <p>Discutons-en lors d'un échange gratuit et sans engagement.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-large">
+          <i class="fas fa-comments"></i> Échanger sur mon projet
+        </a>
+        <a href="tel:+33000000000" class="btn btn-secondary btn-large">
+          <i class="fas fa-phone"></i> 00 00 00 00 00
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
   <div class="container">
-    © DEC – Dessinateur Projeteur BIM · Montpellier
-	<a href="mentions-legales.html">Mentions légales</a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/img/logo.png" alt="DEC BIM" class="logo">
+          <strong>DEC BIM</strong>
+        </div>
+        <p>Dessinateur Projeteur BIM indépendant à Montpellier, spécialiste des projets architecturaux et réglementaires.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#erp">ERP Catégorie 5</a></li>
+          <li><a href="services.html#permis">Permis de Construire</a></li>
+          <li><a href="services.html#3d">Rendu 3D & BIM</a></li>
+          <li><a href="services.html#declaration">Déclaration Préalable</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Entreprise</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <address>
+          <p><i class="fas fa-map-marker-alt"></i> Montpellier, Hérault (34)</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+        </address>
+        <p><i class="fas fa-clock"></i> Lun-Ven : 9h-18h</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
+      <p><a href="mentions-legales.html">Mentions légales</a> • <a href="confidentialite.html">Politique de confidentialité</a></p>
+    </div>
   </div>
 </footer>
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-});
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-</script>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
-

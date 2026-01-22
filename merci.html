@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message envoyé - DEC Dessinateur Projeteur BIM</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Lien vers votre CSS principal -->
+    <style>
+        /* Styles spécifiques pour la page de remerciement */
+        .thank-you-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+        }
+        
+        .thank-you-card {
+            background: white;
+            border-radius: 16px;
+            padding: 4rem 3rem;
+            box-shadow: 0 20px 60px rgba(42, 110, 140, 0.15);
+            max-width: 700px;
+            width: 100%;
+            border-top: 6px solid #2a6e8c;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+            animation: scaleIn 0.6s ease-out 0.3s both;
+        }
+        
+        .thank-you-card h1 {
+            color: #2a6e8c;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .thank-you-card p {
+            color: #555;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+        
+        .next-steps {
+            background: #f0f7fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .next-steps h3 {
+            color: #2a6e8c;
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        
+        .next-steps ul {
+            padding-left: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .next-steps li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .contact-item .icon {
+            color: #2a6e8c;
+            font-size: 1.2rem;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #2a6e8c;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #1e556b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(42, 110, 140, 0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #2a6e8c;
+            border: 2px solid #2a6e8c;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f7fa;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-card {
+                padding: 3rem 1.5rem;
+            }
+            
+            .thank-you-card h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Vous pouvez inclure votre header/navigation ici -->
+    <!-- <header>...</header> -->
+    
+    <main class="thank-you-section">
+        <div class="thank-you-card">
+            <div class="success-icon">✓</div>
+            
+            <h1>Message envoyé avec succès !</h1>
+            
+            <p>Merci de votre intérêt. J'ai bien reçu votre demande et je vais l'étudier attentivement.</p>
+            
+            <div class="next-steps">
+                <h3>Ce qui va se passer maintenant :</h3>
+                <ul>
+                    <li>Je vous réponds par email dans les <strong>24 heures ouvrées</strong></li>
+                    <li>Nous échangerons sur les détails de votre projet</li>
+                    <li>Je vous proposerai une étude gratuite et un devis personnalisé</li>
+                    <li>Nous conviendrons d'un échéancier adapté à vos besoins</li>
+                </ul>
+            </div>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="icon">📧</span>
+                    <span>diag@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📱</span>
+                    <span>00 00 00 00 00</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <span>Montpellier - Hérault (34)</span>
+                </div>
+            </div>
+            
+            <p><strong>En attendant, vous pouvez :</strong></p>
+            
+            <div class="action-buttons">
+                <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+                <a href="/portfolio" class="btn btn-secondary">Voir mes réalisations</a>
+                <a href="/services" class="btn btn-secondary">Découvrir mes services</a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: #888;">
+                Si vous ne recevez pas de réponse sous 48h, vérifiez vos spams ou contactez-moi directement par téléphone.
+            </p>
+        </div>
+    </main>
+    
+    <!-- Vous pouvez inclure votre footer ici -->
+    <!-- <footer>...</footer> -->
+</body>
+</html>

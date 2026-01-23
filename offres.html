@@ -1,146 +1,617 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Offres – DEC Dessinateur Projeteur BIM</title>
+  <meta charset="UTF-8">
+  <title>Offres & Tarifs | DEC BIM - Forfaits ERP, Permis Construire, 3D Montpellier</title>
+  <meta name="description" content="Offres clés en main pour ERP catégorie 5, permis de construire et rendus 3D à Montpellier. Tarifs transparents et devis personnalisés.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Offres & Tarifs - DEC BIM Dessinateur Projeteur">
+  <meta property="og:description" content="Forfaits ERP, permis de construire et rendus 3D à prix transparents">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dec-bim.fr/offres.html">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json" defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "DEC – Dessinateur Projeteur BIM",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Montpellier",
-    "addressRegion": "Occitanie",
-    "addressCountry": "FR"
-  },
-  "areaServed": "Hérault",
-  "description": "Dessinateur-projeteur BIM indépendant spécialisé en rénovation, extension et ERP catégorie 5.",
-  "url": "https://dec-bim.fr",
-  "sameAs": []
-}
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Schema.org for Pricing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "Offres dessin bâtiment DEC BIM",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Forfait ERP Catégorie 5",
+        "price": "2200",
+        "priceCurrency": "EUR",
+        "description": "Dossier complet ERP pour établissements recevant du public"
+      },
+      {
+        "@type": "Offer",
+        "name": "Forfait Permis de Construire",
+        "description": "Dossier complet pour autorisation d'urbanisme"
+      },
+      {
+        "@type": "Offer",
+        "name": "Forfait Rendu 3D",
+        "price": "450",
+        "priceCurrency": "EUR",
+        "description": "Rendu photoréaliste par vue"
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
+<body class="offres-page">
 
-<header>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-    
-    <div style="display:flex;align-items:center;gap:12px;">
-      <img src="assets/img/logo.png" alt="DEC BIM" style="height:42px;">
-      <strong style="font-size:18px;">DEC BIM</strong>
+<header class="main-header">
+  <div class="container header-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="DEC BIM - Dessinateur Projeteur BIM" class="logo" width="48" height="48">
+        <div class="logo-text">
+          <strong>DEC BIM</strong>
+          <span class="logo-subtitle">Dessinateur Projeteur BIM</span>
+        </div>
+      </a>
     </div>
 
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="offres.html">Offres</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-	  <a href="services.html">Services</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i> Accueil
+        </a>
+        <a href="services.html" class="nav-link">
+          <i class="fas fa-cogs"></i> Services
+        </a>
+        <a href="offres.html" class="nav-link active" aria-current="page">
+          <i class="fas fa-tags"></i> Offres
+        </a>
+        <a href="portfolio.html" class="nav-link">
+          <i class="fas fa-images"></i> Portfolio
+        </a>
+        <a href="contact.html" class="nav-link cta-nav">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </div>
     </nav>
-
   </div>
 </header>
 
-<section class="reveal">
-  <div class="container">
-    <h2>Offres Clés en Main</h2>
-    <p class="section-subtitle">Des forfaits transparents, adaptés à chaque étape de votre projet</p>
+<main id="main-content">
+  <!-- Hero Offres -->
+  <section class="page-hero reveal">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Nos Offres & Tarifs</h1>
+        <p class="hero-subtitle">
+          Des forfaits transparents adaptés à chaque type de projet. Demandez un devis personnalisé gratuit 
+          pour une solution sur mesure.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <div class="offers-grid">
+  <!-- Bandeau Transparence -->
+  <section class="transparency-banner reveal">
+    <div class="container">
+      <div class="transparency-content">
+        <div class="transparency-icon">
+          <i class="fas fa-handshake" aria-hidden="true"></i>
+        </div>
+        <div class="transparency-text">
+          <h3>Transparence & Confiance</h3>
+          <p>
+            Tous nos forfaits incluent une étude préalable gratuite, 2 tours de modifications 
+            et un accompagnement jusqu'au dépôt du dossier. Pas de surprises, juste des résultats.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparatif des Offres -->
+  <section class="pricing-comparison reveal" aria-labelledby="comparison-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Forfaits</span>
+        <h2 id="comparison-title">Choisissez l'offre adaptée à votre projet</h2>
+        <p class="section-subtitle">Des solutions clés en main avec un juste équilibre qualité/prix.</p>
+      </div>
+
+      <div class="comparison-table" role="region" aria-label="Tableau comparatif des offres">
+        <div class="table-header">
+          <div class="table-cell feature-col">Prestations incluses</div>
+          <div class="table-cell plan-col basic">
+            <div class="plan-name">Permis Simple</div>
+            <div class="plan-price">Sur devis</div>
+          </div>
+          <div class="table-cell plan-col popular">
+            <div class="plan-badge" aria-label="Offre recommandée">Recommandé</div>
+            <div class="plan-name">ERP Complet</div>
+            <div class="plan-price">2 200€ - 2 800€ HT</div>
+          </div>
+          <div class="table-cell plan-col premium">
+            <div class="plan-name">3D Premium</div>
+            <div class="plan-price">450€ HT/vue</div>
+          </div>
+        </div>
+
+        <div class="table-body">
+          <!-- Ligne 1 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Étude de faisabilité</div>
+            <div class="table-cell plan-col basic"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col popular"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col premium"><i class="fas fa-check" aria-label="Inclus"></i></div>
+          </div>
+          
+          <!-- Ligne 2 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Plans techniques 2D</div>
+            <div class="table-cell plan-col basic"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col popular"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col premium"><i class="fas fa-check" aria-label="Inclus"></i></div>
+          </div>
+          
+          <!-- Ligne 3 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Plans sécurité incendie</div>
+            <div class="table-cell plan-col basic"><i class="fas fa-times" aria-label="Non inclus"></i></div>
+            <div class="table-cell plan-col popular"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col premium"><i class="fas fa-times" aria-label="Non inclus"></i></div>
+          </div>
+          
+          <!-- Ligne 4 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Plans accessibilité PMR</div>
+            <div class="table-cell plan-col basic"><i class="fas fa-times" aria-label="Non inclus"></i></div>
+            <div class="table-cell plan-col popular"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col premium"><i class="fas fa-times" aria-label="Non inclus"></i></div>
+          </div>
+          
+          <!-- Ligne 5 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Modélisation Revit</div>
+            <div class="table-cell plan-col basic"><i class="fas fa-times" aria-label="Non inclus"></i></div>
+            <div class="table-cell plan-col popular"><i class="fas fa-check" aria-label="Inclus"></i></div>
+            <div class="table-cell plan-col premium"><i class="fas fa-check" aria-label="Inclus"></i></div>
+          </div>
+          
+          <!-- Ligne 6 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Rendu 3D photoréaliste</div>
+            <div class="table-cell plan-col basic"><i class="fas fa-times" aria-label="Non inclus"></i></div>
+            <div class="table-cell plan-col popular">Option</div>
+            <div class="table-cell plan-col premium"><i class="fas fa-check" aria-label="Inclus"></i></div>
+          </div>
+          
+          <!-- Ligne 7 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Nombre de modifications</div>
+            <div class="table-cell plan-col basic">2 tours</div>
+            <div class="table-cell plan-col popular">2 tours</div>
+            <div class="table-cell plan-col premium">3 tours</div>
+          </div>
+          
+          <!-- Ligne 8 -->
+          <div class="table-row">
+            <div class="table-cell feature-col">Délai moyen</div>
+            <div class="table-cell plan-col basic">2-3 semaines</div>
+            <div class="table-cell plan-col popular">3-4 semaines</div>
+            <div class="table-cell plan-col premium">1-2 semaines</div>
+          </div>
+          
+          <!-- Ligne 9 - CTA -->
+          <div class="table-row cta-row">
+            <div class="table-cell feature-col"></div>
+            <div class="table-cell plan-col basic">
+              <a href="contact.html?offre=permis" class="btn btn-outline">
+                Demander devis
+              </a>
+            </div>
+            <div class="table-cell plan-col popular">
+              <a href="contact.html?offre=erp" class="btn btn-primary">
+                Choisir cette offre
+              </a>
+            </div>
+            <div class="table-cell plan-col premium">
+              <a href="contact.html?offre=3d" class="btn btn-outline">
+                Demander devis
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forfaits Détails -->
+  <section class="detailed-pricing bg-light reveal" aria-labelledby="details-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="details-title">Détail des prestations</h2>
+        <p class="section-subtitle">Comprenez exactement ce qui est inclus dans chaque forfait.</p>
+      </div>
+
+      <div class="pricing-accordion">
+        <!-- Forfait ERP -->
+        <article class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <h3>Forfait ERP Catégorie 5 Complet</h3>
+              <span class="price-tag">2 200€ - 2 800€ HT</span>
+            </div>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-grid">
+              <div class="accordion-col">
+                <h4>Inclus dans le forfait :</h4>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check"></i> Visite technique et relevé sur site</li>
+                  <li><i class="fas fa-check"></i> Modélisation BIM existant + projet (Revit)</li>
+                  <li><i class="fas fa-check"></i> Plans sécurité incendie complets</li>
+                  <li><i class="fas fa-check"></i> Plans accessibilité PMR norme ERP</li>
+                  <li><i class="fas fa-check"></i> Notice technique réglementaire</li>
+                  <li><i class="fas fa-check"></i> 2 tours de modifications inclus</li>
+                  <li><i class="fas fa-check"></i> Conseils conformité et matériaux</li>
+                  <li><i class="fas fa-check"></i> Dossier prêt pour dépôt en mairie</li>
+                </ul>
+              </div>
+              <div class="accordion-col">
+                <h4>Options disponibles :</h4>
+                <ul class="option-list">
+                  <li>
+                    <span class="option-name">Rendu 3D extérieur</span>
+                    <span class="option-price">+ 450€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Rendu 3D intérieur</span>
+                    <span class="option-price">+ 550€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Visite virtuelle 360°</span>
+                    <span class="option-price">+ 750€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Accompagnement commission sécurité</span>
+                    <span class="option-price">+ 300€ HT</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-cta">
+              <a href="contact.html?offre=erp" class="btn btn-primary">
+                <i class="fas fa-file-contract"></i> Demander un devis personnalisé
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Forfait Permis -->
+        <article class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <h3>Forfait Permis de Construire & Déclarations</h3>
+              <span class="price-tag">Sur devis personnalisé</span>
+            </div>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-grid">
+              <div class="accordion-col">
+                <h4>Inclus selon projet :</h4>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check"></i> Analyse PLU et faisabilité</li>
+                  <li><i class="fas fa-check"></i> Plans techniques complets (situation, masse, coupes, façades)</li>
+                  <li><i class="fas fa-check"></i> Notice descriptive CERFA</li>
+                  <li><i class="fas fa-check"></i> Calculs règlementaires (emprise, hauteur, prospect)</li>
+                  <li><i class="fas fa-check"></i> 2 tours de modifications inclus</li>
+                  <li><i class="fas fa-check"></i> Conseils techniques et réglementaires</li>
+                  <li><i class="fas fa-check"></i> Dossier prêt pour dépôt</li>
+                </ul>
+              </div>
+              <div class="accordion-col">
+                <h4>Tarification indicative :</h4>
+                <ul class="option-list">
+                  <li>
+                    <span class="option-name">Déclaration préalable simple</span>
+                    <span class="option-price">750€ - 1 200€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Permis maison individuelle</span>
+                    <span class="option-price">1 500€ - 2 500€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Extension/surélévation</span>
+                    <span class="option-price">1 200€ - 2 000€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Projet complexe</span>
+                    <span class="option-price">Sur devis</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-cta">
+              <a href="contact.html?offre=permis" class="btn btn-primary">
+                <i class="fas fa-file-contract"></i> Obtenir un devis précis
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Forfait 3D -->
+        <article class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <div class="accordion-title">
+              <h3>Forfait Visualisation 3D & BIM</h3>
+              <span class="price-tag">À partir de 450€ HT / vue</span>
+            </div>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-grid">
+              <div class="accordion-col">
+                <h4>Inclus selon forfait :</h4>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check"></i> Modélisation 3D de votre projet</li>
+                  <li><i class="fas fa-check"></i> Textures et matériaux réalistes</li>
+                  <li><i class="fas fa-check"></i> Éclairage naturel et artificiel</li>
+                  <li><i class="fas fa-check"></i> Intégration dans l'environnement</li>
+                  <li><i class="fas fa-check"></i> Images haute résolution (4K)</li>
+                  <li><i class="fas fa-check"></i> 2 tours de modifications inclus</li>
+                  <li><i class="fas fa-check"></i> Livraison formats standards</li>
+                </ul>
+              </div>
+              <div class="accordion-col">
+                <h4>Packages disponibles :</h4>
+                <ul class="option-list">
+                  <li>
+                    <span class="option-name">Pack 1 vue</span>
+                    <span class="option-price">450€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Pack 3 vues</span>
+                    <span class="option-price">1 200€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Animation courte (30s)</span>
+                    <span class="option-price">1 800€ HT</span>
+                  </li>
+                  <li>
+                    <span class="option-name">Modélisation BIM complète</span>
+                    <span class="option-price">Sur devis</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-cta">
+              <a href="contact.html?offre=3d" class="btn btn-primary">
+                <i class="fas fa-file-contract"></i> Demander une simulation
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garanties -->
+  <section class="guarantees reveal" aria-labelledby="guarantees-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Garanties</span>
+        <h2 id="guarantees-title">Vos garanties avec DEC BIM</h2>
+        <p class="section-subtitle">Des engagements clairs pour votre tranquillité d'esprit.</p>
+      </div>
       
-      <!-- Offre 1 : ERP -->
-      <div class="offer-card highlight">
-        <div class="offer-header">
-          <h3>Forfait ERP Catégorie 5 Complet</h3>
-          <div class="offer-price">À partir de <strong>2 200 € HT</strong></div>
-          <p class="offer-badge">Le plus demandé</p>
-        </div>
-        <div class="offer-content">
-          <p>Pour l'ouverture, la reprise ou la rénovation de votre commerce, bureau ou restaurant.</p>
-          <ul>
-            <li>Relevé et modélisation BIM de l'existant </li>
-            <li>Plans réglementaires sécurité incendie</li>
-            <li>Plans d'accessibilité PMR norme ERP</li>
-            <li>Notice technique et conseils conformité</li>
-            <li>1 à 2 révisions incluses</li>
-          </ul>
-        </div>
-        <div class="offer-cta">
-          <a href="/contact" class="btn btn-primary">Demander un devis précis</a>
-        </div>
+      <div class="guarantees-grid">
+        <article class="guarantee-card">
+          <div class="guarantee-icon">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+          </div>
+          <h3>Conformité garantie</h3>
+          <p>Tous nos dossiers respectent scrupuleusement les normes en vigueur (PLU, ERP, accessibilité).</p>
+        </article>
+        
+        <article class="guarantee-card">
+          <div class="guarantee-icon">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+          </div>
+          <h3>Délais respectés</h3>
+          <p>Un planning détaillé vous est fourni et rigoureusement respecté, avec suivi régulier.</p>
+        </article>
+        
+        <article class="guarantee-card">
+          <div class="guarantee-icon">
+            <i class="fas fa-sync-alt" aria-hidden="true"></i>
+          </div>
+          <h3>Modifications incluses</h3>
+          <p>Chaque forfait inclut des tours de modifications pour ajuster parfaitement votre projet.</p>
+        </article>
+        
+        <article class="guarantee-card">
+          <div class="guarantee-icon">
+            <i class="fas fa-headset" aria-hidden="true"></i>
+          </div>
+          <h3>Accompagnement complet</h3>
+          <p>Je suis votre interlocuteur unique du premier contact au dépôt final du dossier.</p>
+        </article>
       </div>
-
-      <!-- Offre 2 : Permis -->
-      <div class="offer-card">
-        <div class="offer-header">
-          <h3>Forfait Permis / Déclaration Préalable</h3>
-          <div class="offer-price"><strong>Sur devis personnalisé</strong></div>
-          <p class="offer-badge">Projet sur mesure</p>
-        </div>
-        <div class="offer-content">
-          <p>Construction neuve, extension, ou rénovation de maison individuelle.</p>
-          <ul>
-            <li>Étude préalable de faisabilité (PLU)</li>
-            <li>Plans techniques complets (situation, masse, coupes, façades)</li>
-            <li>Dossier graphique prêt au dépôt en mairie</li>
-            <li>Notice descriptive CERFA</li>
-            <li>Accompagnement jusqu'à l'instruction</li>
-          </ul>
-        </div>
-        <div class="offer-cta">
-          <a href="/contact" class="btn btn-secondary">Décrivez-moi votre projet</a>
-        </div>
-      </div>
-
-      <!-- Offre 3 : 3D -->
-      <div class="offer-card">
-        <div class="offer-header">
-          <h3>Forfait Visualisation 3D</h3>
-          <div class="offer-price">À partir de <strong>450 € HT / vue</strong></div>
-          <p class="offer-badge">Outil de décision</p>
-        </div>
-        <div class="offer-content">
-          <p>Pour visualiser, présenter ou valider un projet avant engagement des travaux.</p>
-          <ul>
-            <li>Modélisation 3D de votre projet sur mesure</li>
-            <li>1 à 3 vues photoréalistes (extérieur / intérieur)</li>
-            <li>Intégration dans l'environnement existant</li>
-            <li>Réglages matériaux, éclairage, ambiance</li>
-            <li>Fichier image haute résolution livré</li>
-          </ul>
-        </div>
-        <div class="offer-cta">
-          <a href="/contact" class="btn btn-secondary">Obtenir une simulation</a>
-        </div>
-      </div>
-
     </div>
+  </section>
 
-    <div class="offer-footer">
-      <p><strong>Besoin d'une solution sur mesure ?</strong> Tous les forfaits sont ajustables selon la complexité de votre projet. <a href="/contact">Contactez-moi pour une étude gratuite</a>.</p>
+  <!-- CTA Financement -->
+  <section class="financing-cta reveal" aria-labelledby="financing-title">
+    <div class="container">
+      <div class="financing-card">
+        <div class="financing-content">
+          <h2 id="financing-title"><i class="fas fa-euro-sign" aria-hidden="true"></i> Besoin d'un financement ?</h2>
+          <p>Je vous accompagne dans la recherche de solutions de financement adaptées à votre projet.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Aides locales et nationales</li>
+            <li><i class="fas fa-check"></i> Prêts travaux spécifiques</li>
+            <li><i class="fas fa-check"></i> TVA réduite selon éligibilité</li>
+            <li><i class="fas fa-check"></i> Subventions énergie et écologie</li>
+          </ul>
+        </div>
+        <div class="financing-cta-btn">
+          <a href="contact.html?subject=financement" class="btn btn-primary btn-large">
+            <i class="fas fa-comments"></i> Parler financement
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
+  <!-- FAQ Tarifs -->
+  <section class="faq-section reveal" aria-labelledby="faq-tarifs-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-tarifs-title">Questions sur les tarifs</h2>
+      </div>
+      
+      <div class="faq-grid">
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Pourquoi le tarif varie-t-il selon les projets ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Le tarif dépend de plusieurs facteurs : complexité du projet, surface, nombre de plans nécessaires, 
+              contraintes techniques spécifiques, délais demandés. Chaque projet étant unique, je propose un devis 
+              personnalisé après étude de vos besoins.
+            </p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Les honoraires sont-ils soumis à TVA ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui, mes prestations sont soumises à la TVA au taux de 20%. Les prix indiqués sont hors taxes. 
+              Un acompte de 30% est demandé au démarrage du projet, le solde à la livraison.
+            </p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Proposez-vous des facilités de paiement ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui, pour les projets d'un certain montant, nous pouvons convenir d'un échéancier de paiement adapté 
+              à votre situation. Des solutions de financement peuvent également être explorées.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-section reveal">
+    <div class="container cta-container">
+      <div class="cta-content">
+        <h2>Un projet précis en tête ?</h2>
+        <p>Obtenez un devis détaillé et personnalisé en 24h maximum.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-large">
+          <i class="fas fa-calculator"></i> Obtenir mon devis
+        </a>
+        <a href="tel:+33000000000" class="btn btn-secondary btn-large">
+          <i class="fas fa-phone"></i> 00 00 00 00 00
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="main-footer">
   <div class="container">
-    © DEC – Dessinateur Projeteur BIM · Montpellier
-	<a href="mentions-legales.html">Mentions légales</a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/img/logo.png" alt="DEC BIM" class="logo" width="40" height="40">
+          <strong>DEC BIM</strong>
+        </div>
+        <p>Dessinateur Projeteur BIM indépendant à Montpellier, spécialiste des projets architecturaux et réglementaires.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:diag@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#erp">ERP Catégorie 5</a></li>
+          <li><a href="services.html#permis">Permis de Construire</a></li>
+          <li><a href="services.html#3d">Rendu 3D & BIM</a></li>
+          <li><a href="services.html#declaration">Déclarations Préalables</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <address>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montpellier, Hérault (34)</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+        </address>
+        <p><i class="fas fa-clock" aria-hidden="true"></i> Lun-Ven : 9h-18h</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2024</span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> • 
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </p>
+    </div>
   </div>
 </footer>
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-});
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-</script>
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
+
 </body>
 </html>

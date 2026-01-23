@@ -1,128 +1,219 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="utf-8">
-  <title>DEC – Dessinateur Projeteur BIM Montpellier | ERP Caté 5 | Permis Construire</title>
-  <meta name="description" content="Dessinateur-projeteur BIM indépendant à Montpellier, spécialiste ERP catégorie 5, permis de construire et rendus 3D photoréalistes. Accompagnement de A à Z pour vos projets.">
+  <meta charset="UTF-8">
+  <title>Services | DEC BIM - ERP Catégorie 5, Permis Construire, Rendu 3D Montpellier</title>
+  <meta name="description" content="Services de dessinateur-projeteur BIM : ERP catégorie 5, permis de construire, rendus 3D photoréalistes, modélisation Revit à Montpellier.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services - DEC BIM Dessinateur Projeteur Montpellier">
+  <meta property="og:description" content="Expertise en ERP catégorie 5, permis de construire et rendus 3D à Montpellier">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dec-bim.fr/services.html">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Schema.org Rich Snippets -->
+  <!-- Schema.org for Services -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "DEC – Dessinateur Projeteur BIM",
-    "image": "https://dec-bim.fr/assets/img/logo.png",
-    "description": "Dessinateur-projeteur BIM indépendant à Montpellier, spécialiste ERP catégorie 5, permis de construire et rendus 3D photoréalistes.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Montpellier",
-      "addressRegion": "Occitanie",
-      "postalCode": "34000",
-      "addressCountry": "FR"
+    "@type": "Service",
+    "serviceType": "Dessin architectural",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "DEC BIM"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "43.610769",
-      "longitude": "3.876716"
-    },
-    "areaServed": ["Hérault", "Gard", "Aude"],
-    "serviceType": ["Dessin architectural", "Permis de construire", "ERP catégorie 5", "Modélisation BIM", "Rendu 3D"],
-    "priceRange": "€€",
-    "openingHours": "Mo-Fr 09:00-18:00",
-    "telephone": "+33-00-00-00-00",
-    "email": "diag@gmail.com",
-    "url": "https://dec-bim.fr",
-    "sameAs": []
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services de dessin bâtiment",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "ERP Catégorie 5",
+            "description": "Dossiers réglementaires pour établissements recevant du public"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Permis de construire",
+            "description": "Dossiers complets pour autorisations d'urbanisme"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Rendu 3D photoréaliste",
+            "description": "Visualisations 3D et modélisation BIM"
+          }
+        }
+      ]
+    }
   }
   </script>
-  
-  <!-- Plausible Analytics -->
-  <script defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js"></script>
 </head>
+<body class="services-page">
 
-<body>
+<header class="main-header">
+  <div class="container header-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="DEC BIM - Dessinateur Projeteur BIM" class="logo" width="48" height="48">
+        <div class="logo-text">
+          <strong>DEC BIM</strong>
+          <span class="logo-subtitle">Dessinateur Projeteur BIM</span>
+        </div>
+      </a>
+    </div>
 
-<main>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i> Accueil
+        </a>
+        <a href="services.html" class="nav-link active" aria-current="page">
+          <i class="fas fa-cogs"></i> Services
+        </a>
+        <a href="offres.html" class="nav-link">
+          <i class="fas fa-tags"></i> Offres
+        </a>
+        <a href="portfolio.html" class="nav-link">
+          <i class="fas fa-images"></i> Portfolio
+        </a>
+        <a href="contact.html" class="nav-link cta-nav">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
   <!-- Hero Services -->
   <section class="page-hero reveal">
     <div class="container">
       <div class="page-hero-content">
         <h1>Mes Services</h1>
-        <p class="hero-subtitle">Expertise technique pointue pour chaque type de projet architectural et réglementaire</p>
+        <p class="hero-subtitle">
+          Expertise technique pointue pour chaque type de projet architectural et réglementaire. 
+          Des solutions sur mesure pour vos besoins spécifiques.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- Navigation entre services -->
+  <nav class="services-nav reveal" aria-label="Navigation des services">
+    <div class="container">
+      <div class="services-nav-inner">
+        <a href="#erp" class="service-nav-link">
+          <i class="fas fa-building-shield"></i>
+          <span>ERP Catégorie 5</span>
+        </a>
+        <a href="#permis" class="service-nav-link">
+          <i class="fas fa-drafting-compass"></i>
+          <span>Permis de Construire</span>
+        </a>
+        <a href="#3d" class="service-nav-link">
+          <i class="fas fa-cube"></i>
+          <span>Rendu 3D & BIM</span>
+        </a>
+        <a href="#declaration" class="service-nav-link">
+          <i class="fas fa-file-alt"></i>
+          <span>Déclarations</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Service ERP -->
-  <section id="erp" class="service-detail reveal">
+  <section id="erp" class="service-detail reveal" aria-labelledby="erp-title">
     <div class="container">
       <div class="service-header">
         <div class="service-icon-large">
-          <i class="fas fa-building-shield"></i>
+          <i class="fas fa-building-shield" aria-hidden="true"></i>
         </div>
         <div class="service-title-container">
           <span class="service-category">Réglementation</span>
-          <h2>ERP Catégorie 5</h2>
-          <p class="service-subtitle">Dossiers complets pour l'ouverture et la rénovation d'établissements recevant du public</p>
+          <h2 id="erp-title">ERP Catégorie 5</h2>
+          <p class="service-subtitle">
+            Dossiers complets pour l'ouverture et la rénovation d'établissements recevant du public
+          </p>
         </div>
       </div>
       
       <div class="service-content">
         <div class="service-description">
           <h3>Pour quels projets ?</h3>
-          <p>L'ERP catégorie 5 concerne tous les établissements accueillant moins de 200 personnes : commerces, bureaux, restaurants, cabinets médicaux, écoles privées, petites salles de sport, etc.</p>
+          <p>
+            L'ERP (Établissement Recevant du Public) catégorie 5 concerne tous les établissements 
+            accueillant moins de 200 personnes : commerces, bureaux, restaurants, cabinets médicaux, 
+            écoles privées, petites salles de sport, etc. Que ce soit pour une création, une extension 
+            ou une rénovation, je vous accompagne dans la réalisation de votre dossier réglementaire.
+          </p>
           
           <h3>Mes prestations complètes</h3>
           <div class="service-features-grid">
-            <div class="feature">
-              <i class="fas fa-fire-extinguisher"></i>
+            <article class="feature">
+              <i class="fas fa-fire-extinguisher" aria-hidden="true"></i>
               <h4>Sécurité incendie</h4>
               <ul>
-                <li>Plans d'implantation</li>
+                <li>Plans d'implantation détaillés</li>
                 <li>Schémas de désenfumage</li>
                 <li>Plans d'évacuation</li>
-                <li>Notice de sécurité</li>
+                <li>Notice de sécurité conforme</li>
+                <li>Signalétique réglementaire</li>
               </ul>
-            </div>
+            </article>
             
-            <div class="feature">
-              <i class="fas fa-wheelchair"></i>
+            <article class="feature">
+              <i class="fas fa-wheelchair" aria-hidden="true"></i>
               <h4>Accessibilité PMR</h4>
               <ul>
-                <li>Plans d'accessibilité</li>
+                <li>Plans d'accessibilité complets</li>
                 <li>Conformité AD'AP</li>
                 <li>Cheminements accessibles</li>
                 <li>Stationnements adaptés</li>
+                <li>Équipements sanitaires PMR</li>
               </ul>
-            </div>
+            </article>
             
-            <div class="feature">
-              <i class="fas fa-cube"></i>
+            <article class="feature">
+              <i class="fas fa-cube" aria-hidden="true"></i>
               <h4>Modélisation BIM</h4>
               <ul>
                 <li>Relevé existant Revit</li>
-                <li>Modélisation projet</li>
+                <li>Modélisation projet 3D</li>
                 <li>Plans techniques 2D/3D</li>
                 <li>Export formats standards</li>
+                <li>Maquette numérique exploitable</li>
               </ul>
-            </div>
+            </article>
           </div>
           
           <div class="service-process">
-            <h3>Déroulement type</h3>
+            <h3>Déroulement type d'un projet ERP</h3>
             <ol class="process-list">
-              <li><strong>Visite et relevé</strong> : Prise de mesures et analyse des contraintes</li>
-              <li><strong>Modélisation</strong> : Création du modèle BIM existant + projet</li>
-              <li><strong>Production des plans</strong> : Sécurité, accessibilité, implantation</li>
-              <li><strong>Validation</strong> : Présentation et ajustements</li>
-              <li><strong>Livraison</strong> : Dossier complet prêt pour dépôt</li>
+              <li><strong>Visite technique et relevé</strong> : Prise de mesures sur site et analyse des contraintes existantes</li>
+              <li><strong>Étude réglementaire</strong> : Analyse des normes ERP, sécurité incendie, accessibilité PMR</li>
+              <li><strong>Modélisation BIM</strong> : Création du modèle numérique existant + projet</li>
+              <li><strong>Production des plans</strong> : Sécurité, accessibilité, implantation, désenfumage</li>
+              <li><strong>Validation conjointe</strong> : Présentation et ajustements selon vos retours</li>
+              <li><strong>Livraison finale</strong> : Dossier complet prêt pour dépôt en commission de sécurité</li>
             </ol>
           </div>
           
@@ -134,13 +225,14 @@
           </div>
         </div>
         
-        <div class="service-sidebar">
+        <aside class="service-sidebar" aria-labelledby="sidebar-title">
           <div class="sidebar-card">
-            <h4>Délais moyens</h4>
+            <h4 id="sidebar-title">Délais moyens</h4>
             <ul class="timeline">
               <li>Étude préalable : <strong>48h</strong></li>
               <li>Production dossier : <strong>2-3 semaines</strong></li>
-              <li>Validations : <strong>1 semaine</strong></li>
+              <li>Validations client : <strong>1 semaine</strong></li>
+              <li>Finalisation : <strong>3-5 jours</strong></li>
             </ul>
           </div>
           
@@ -149,8 +241,9 @@
             <ul>
               <li>Plans existants (si disponibles)</li>
               <li>Photos des locaux</li>
-              <li>Description du projet</li>
+              <li>Description détaillée du projet</li>
               <li>Contraintes spécifiques</li>
+              <li>Budget prévisionnel</li>
             </ul>
           </div>
           
@@ -160,93 +253,360 @@
             <p><i class="fas fa-map-marker"></i> <strong>Secondaire :</strong> Gard (30), Aude (11)</p>
             <p><i class="fas fa-map-marker"></i> <strong>National :</strong> Sur devis spécifique</p>
           </div>
-        </div>
+        </aside>
       </div>
     </div>
   </section>
 
   <!-- Service Permis de Construire -->
-  <section id="permis" class="service-detail bg-light reveal">
+  <section id="permis" class="service-detail bg-light reveal" aria-labelledby="permis-title">
     <div class="container">
       <div class="service-header">
         <div class="service-icon-large">
-          <i class="fas fa-drafting-compass"></i>
+          <i class="fas fa-drafting-compass" aria-hidden="true"></i>
         </div>
         <div class="service-title-container">
           <span class="service-category">Urbanisme</span>
-          <h2>Permis de Construire & Déclarations Préalables</h2>
-          <p class="service-subtitle">Dossiers techniques conformes pour vos projets de construction et d'aménagement</p>
+          <h2 id="permis-title">Permis de Construire & Déclarations Préalables</h2>
+          <p class="service-subtitle">
+            Dossiers techniques conformes pour vos projets de construction et d'aménagement
+          </p>
         </div>
       </div>
       
-      <!-- Contenu similaire au service ERP avec adaptation -->
-      <!-- ... -->
-      
+      <div class="service-content">
+        <div class="service-description">
+          <h3>Types de projets couverts</h3>
+          <p>
+            J'accompagne particuliers et professionnels dans toutes leurs démarches d'urbanisme : 
+            maisons individuelles neuves, extensions, surélévations, rénovations complètes, 
+            changements de destination, aménagements de combles, piscines, etc.
+          </p>
+          
+          <h3>Prestations incluses</h3>
+          <div class="service-features-grid">
+            <article class="feature">
+              <i class="fas fa-ruler-combined" aria-hidden="true"></i>
+              <h4>Plans techniques</h4>
+              <ul>
+                <li>Plan de situation</li>
+                <li>Plan de masse</li>
+                <li>Plans en coupe</li>
+                <li>Plans des façades</li>
+                <li>Plans des toitures</li>
+              </ul>
+            </article>
+            
+            <article class="feature">
+              <i class="fas fa-balance-scale" aria-hidden="true"></i>
+              <h4>Conformité PLU</h4>
+              <ul>
+                <li>Analyse règlementaire</li>
+                <li>Règles graphiques</li>
+                <li>Calculs d'emprise</li>
+                <li>Vérification hauteurs</li>
+                <li>Respect des prospect</li>
+              </ul>
+            </article>
+            
+            <article class="feature">
+              <i class="fas fa-file-signature" aria-hidden="true"></i>
+              <h4>Dossier administratif</h4>
+              <ul>
+                <li>Notice descriptive</li>
+                <li>Formulaire CERFA</li>
+                <li>Pièces graphiques</li>
+                <li>Plan de situation</li>
+                <li>Photos du site</li>
+              </ul>
+            </article>
+          </div>
+          
+          <div class="service-process">
+            <h3>Processus de validation</h3>
+            <ol class="process-list">
+              <li><strong>Analyse PLU</strong> : Vérification de la faisabilité du projet</li>
+              <li><strong>Esquisse</strong> : Proposition de principe et volumétrie</li>
+              <li><strong>Plans détaillés</strong> : Production des plans techniques</li>
+              <li><strong>Validation client</strong> : Présentation et ajustements</li>
+              <li><strong>Finalisation</strong> : Dossier complet prêt au dépôt</li>
+              <li><strong>Suivi</strong> : Accompagnement jusqu'à l'obtention de l'autorisation</li>
+            </ol>
+          </div>
+          
+          <div class="service-cta">
+            <a href="contact.html?service=permis" class="btn btn-primary">
+              <i class="fas fa-file-contract"></i> Demander un devis Permis
+            </a>
+            <span class="price-indicator">Sur devis personnalisé</span>
+          </div>
+        </div>
+        
+        <aside class="service-sidebar">
+          <div class="sidebar-card">
+            <h4>Délais selon projet</h4>
+            <ul class="timeline">
+              <li>Déclaration préalable : <strong>1-2 semaines</strong></li>
+              <li>Permis simple : <strong>2-3 semaines</strong></li>
+              <li>Projet complexe : <strong>3-4 semaines</strong></li>
+              <li>Instruction mairie : <strong>2-3 mois</strong></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-card">
+            <h4>Garanties</h4>
+            <ul>
+              <li>Conformité PLU garantie</li>
+              <li>2 tours de modifications inclus</li>
+              <li>Accompagnement mairie</li>
+              <li>Suivi jusqu'à autorisation</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </div>
   </section>
 
   <!-- Service 3D -->
-  <section id="3d" class="service-detail reveal">
+  <section id="3d" class="service-detail reveal" aria-labelledby="3d-title">
     <div class="container">
       <div class="service-header">
         <div class="service-icon-large">
-          <i class="fas fa-cube"></i>
+          <i class="fas fa-cube" aria-hidden="true"></i>
         </div>
         <div class="service-title-container">
           <span class="service-category">Visualisation</span>
-          <h2>Rendu 3D & Modélisation BIM</h2>
-          <p class="service-subtitle">Donnez vie à vos projets avant même le premier coup de pelle</p>
+          <h2 id="3d-title">Rendu 3D & Modélisation BIM</h2>
+          <p class="service-subtitle">
+            Donnez vie à vos projets avant même le premier coup de pelle
+          </p>
         </div>
       </div>
       
-      <!-- Contenu similaire au service ERP avec adaptation -->
-      <!-- ... -->
+      <div class="service-content">
+        <div class="service-description">
+          <h3>Applications concrètes</h3>
+          <p>
+            La modélisation 3D et les rendus photoréalistes sont des outils puissants pour : 
+            présenter votre projet à des investisseurs, valider des choix architecturaux, 
+            communiquer avec les artisans, obtenir des financements, ou simplement visualiser 
+            votre future réalisation.
+          </p>
+          
+          <h3>Types de rendus proposés</h3>
+          <div class="service-features-grid">
+            <article class="feature">
+              <i class="fas fa-home" aria-hidden="true"></i>
+              <h4>Rendu extérieur</h4>
+              <ul>
+                <li>Intégration paysagère</li>
+                <li>Matériaux réalistes</li>
+                <li>Éclairage naturel</li>
+                <li>Environnement 3D</li>
+                <li>Vues multiples</li>
+              </ul>
+            </article>
+            
+            <article class="feature">
+              <i class="fas fa-couch" aria-hidden="true"></i>
+              <h4>Rendu intérieur</h4>
+              <ul>
+                <li>Ambiances lumineuses</li>
+                <li>Matériaux textures</li>
+                <li>Mobilier et décoration</li>
+                <li>Perspectives immersives</li>
+                <li>Éclairage artificiel</li>
+              </ul>
+            </article>
+            
+            <article class="feature">
+              <i class="fas fa-project-diagram" aria-hidden="true"></i>
+              <h4>Modélisation BIM</h4>
+              <ul>
+                <li>Maquette numérique Revit</li>
+                <li>Plans techniques 2D/3D</li>
+                <li>Quantitatif matériaux</li>
+                <li>Coordination technique</li>
+                <li>Export formats standards</li>
+              </ul>
+            </article>
+          </div>
+          
+          <div class="service-cta">
+            <a href="contact.html?service=3d" class="btn btn-primary">
+              <i class="fas fa-file-contract"></i> Demander un devis 3D
+            </a>
+            <span class="price-indicator">À partir de 450 € HT / vue</span>
+          </div>
+        </div>
+        
+        <aside class="service-sidebar">
+          <div class="sidebar-card">
+            <h4>Livrables standards</h4>
+            <ul>
+              <li>Images haute résolution (4K)</li>
+              <li>Format JPG/PNG/TIFF</li>
+              <li>2 à 3 vues par projet</li>
+              <li>Options : animations, visites virtuelles</li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-card">
+            <h4>Délais de production</h4>
+            <ul class="timeline">
+              <li>1 vue simple : <strong>3-5 jours</strong></li>
+              <li>Pack 3 vues : <strong>1-2 semaines</strong></li>
+              <li>Animation : <strong>2-3 semaines</strong></li>
+              <li>Modélisation BIM : <strong>Sur devis</strong></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Déclarations -->
+  <section id="declaration" class="service-detail bg-light reveal" aria-labelledby="declaration-title">
+    <div class="container">
+      <div class="service-header">
+        <div class="service-icon-large">
+          <i class="fas fa-file-alt" aria-hidden="true"></i>
+        </div>
+        <div class="service-title-container">
+          <span class="service-category">Urbanisme</span>
+          <h2 id="declaration-title">Déclarations Préalables de Travaux</h2>
+          <p class="service-subtitle">
+            Simplifiez vos démarches pour les travaux ne nécessitant pas de permis de construire
+          </p>
+        </div>
+      </div>
       
+      <div class="service-content">
+        <div class="service-description">
+          <h3>Projets concernés</h3>
+          <p>
+            La déclaration préalable (DP) est requise pour de nombreux travaux : construction d'un abri de jardin, 
+            extension inférieure à 40m², modification de façade, création de clôture, changement de destination, 
+            aménagement de combles, etc. Je vous accompagne dans cette démarche simplifiée.
+          </p>
+          
+          <div class="service-cta">
+            <a href="contact.html?service=declaration" class="btn btn-primary">
+              <i class="fas fa-file-contract"></i> Demander un devis DP
+            </a>
+            <span class="price-indicator">À partir de 750 € HT</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- FAQ Section -->
-  <section class="faq-section reveal">
+  <section class="faq-section reveal" aria-labelledby="faq-title">
     <div class="container">
       <div class="section-header">
-        <h2>Questions fréquentes</h2>
+        <h2 id="faq-title">Questions fréquentes sur mes services</h2>
+        <p class="section-subtitle">Trouvez rapidement des réponses à vos interrogations</p>
       </div>
       
       <div class="faq-grid">
-        <div class="faq-item">
-          <button class="faq-question">Quels sont vos délais de réalisation ?</button>
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quels sont vos délais de réalisation ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
           <div class="faq-answer">
-            <p>Les délais varient selon la complexité du projet : de 2 semaines pour une déclaration préalable simple à 4-6 semaines pour un ERP catégorie 5 complet. Un planning détaillé vous est fourni lors du devis.</p>
+            <p>
+              Les délais varient selon la complexité du projet : de 2 semaines pour une déclaration préalable simple 
+              à 4-6 semaines pour un ERP catégorie 5 complet. Un planning détaillé vous est fourni lors du devis, 
+              avec des jalons clairs pour chaque étape.
+            </p>
           </div>
-        </div>
+        </article>
         
-        <div class="faq-item">
-          <button class="faq-question">Puis-je faire modifier les plans après validation ?</button>
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Puis-je faire modifier les plans après validation ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
           <div class="faq-answer">
-            <p>Oui, chaque forfait inclut 2 tours de modifications mineures. Les modifications majeures pourraient faire l'objet d'un avenant au devis initial.</p>
+            <p>
+              Oui, chaque forfait inclut 2 tours de modifications mineures. Les modifications majeures 
+              pourraient faire l'objet d'un avenant au devis initial. Nous validons ensemble un cahier des charges 
+              précis en amont pour minimiser les modifications.
+            </p>
           </div>
-        </div>
+        </article>
         
-        <!-- Plus de questions/réponses -->
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quelle est votre zone d'intervention ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Je suis basé à Montpellier et intervient principalement dans l'Hérault (34). 
+              Je peux également travailler dans le Gard (30) et l'Aude (11). Pour les projets en France entière, 
+              nous pouvons travailler à distance avec des relevés fournis par vos soins.
+            </p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Fournissez-vous des conseils sur les matériaux et techniques ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolument ! En tant que professionnel du bâtiment, je vous conseille sur le choix des matériaux, 
+              les techniques constructives adaptées à votre projet, et les solutions pour optimiser votre budget 
+              tout en garantissant qualité et durabilité.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Services -->
+  <section class="cta-section reveal">
+    <div class="container cta-container">
+      <div class="cta-content">
+        <h2>Un projet en tête ? Parlons-en !</h2>
+        <p>Je vous propose une étude gratuite de votre projet pour vous orienter vers la solution la plus adaptée.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-large">
+          <i class="fas fa-comments"></i> Discuter de mon projet
+        </a>
+        <a href="tel:+33000000000" class="btn btn-secondary btn-large">
+          <i class="fas fa-phone"></i> Appeler au 00 00 00 00 00
+        </a>
       </div>
     </div>
   </section>
 </main>
 
-
-<footer>
+<footer class="main-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
         <div class="footer-logo">
-          <img src="assets/img/logo.png" alt="DEC BIM" class="logo">
+          <img src="assets/img/logo.png" alt="DEC BIM" class="logo" width="40" height="40">
           <strong>DEC BIM</strong>
         </div>
         <p>Dessinateur Projeteur BIM indépendant à Montpellier, spécialiste des projets architecturaux et réglementaires.</p>
         <div class="footer-social">
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:diag@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
       
@@ -256,12 +616,12 @@
           <li><a href="services.html#erp">ERP Catégorie 5</a></li>
           <li><a href="services.html#permis">Permis de Construire</a></li>
           <li><a href="services.html#3d">Rendu 3D & BIM</a></li>
-          <li><a href="services.html#declaration">Déclaration Préalable</a></li>
+          <li><a href="services.html#declaration">Déclarations Préalables</a></li>
         </ul>
       </div>
       
       <div class="footer-col">
-        <h3>Entreprise</h3>
+        <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="offres.html">Offres</a></li>
@@ -273,21 +633,26 @@
       <div class="footer-col">
         <h3>Contact</h3>
         <address>
-          <p><i class="fas fa-map-marker-alt"></i> Montpellier, Hérault (34)</p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montpellier, Hérault (34)</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
         </address>
-        <p><i class="fas fa-clock"></i> Lun-Ven : 9h-18h</p>
+        <p><i class="fas fa-clock" aria-hidden="true"></i> Lun-Ven : 9h-18h</p>
       </div>
     </div>
     
     <div class="footer-bottom">
-      <p>&copy; <span id="current-year"></span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
-      <p><a href="mentions-legales.html">Mentions légales</a> • <a href="confidentialite.html">Politique de confidentialité</a></p>
+      <p>&copy; <span id="current-year">2024</span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> • 
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </p>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
+
 </body>
 </html>

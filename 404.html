@@ -1,20 +1,511 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Page introuvable – DEC BIM</title>
+  <meta charset="UTF-8">
+  <title>Page non trouvée | DEC BIM - Dessinateur Projeteur BIM Montpellier</title>
+  <meta name="description" content="La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services de dessin bâtiment à Montpellier.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="error-page">
 
-<section class="bg-light fade-in">
-  <div class="container">
-    <h1>404</h1>
-    <p>La page demandée n’existe pas ou a été déplacée.</p>
-    <a class="btn" href="index.html">Retour à l’accueil</a>
+<header class="main-header">
+  <div class="container header-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="DEC BIM - Dessinateur Projeteur BIM" class="logo" width="48" height="48">
+        <div class="logo-text">
+          <strong>DEC BIM</strong>
+          <span class="logo-subtitle">Dessinateur Projeteur BIM</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i> Accueil
+        </a>
+        <a href="services.html" class="nav-link">
+          <i class="fas fa-cogs"></i> Services
+        </a>
+        <a href="offres.html" class="nav-link">
+          <i class="fas fa-tags"></i> Offres
+        </a>
+        <a href="portfolio.html" class="nav-link">
+          <i class="fas fa-images"></i> Portfolio
+        </a>
+        <a href="contact.html" class="nav-link">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </div>
+    </nav>
   </div>
-</section>
+</header>
+
+<main id="main-content">
+  <!-- Section 404 -->
+  <section class="error-section reveal">
+    <div class="container">
+      <div class="error-content">
+        <div class="error-illustration">
+          <div class="error-number">
+            <span class="digit">4</span>
+            <span class="digit">0</span>
+            <span class="digit">4</span>
+          </div>
+          <div class="error-icon">
+            <i class="fas fa-drafting-compass" aria-hidden="true"></i>
+          </div>
+        </div>
+        
+        <h1>Oups ! Page non trouvée</h1>
+        
+        <p class="error-message">
+          Il semble que la page que vous recherchez ait été déplacée, supprimée ou n'existe pas. 
+          Pas de panique, je peux vous aider à retrouver votre chemin.
+        </p>
+        
+        <div class="error-suggestions">
+          <h2><i class="fas fa-lightbulb" aria-hidden="true"></i> Quelques suggestions :</h2>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Vérifiez l'URL pour d'éventuelles fautes de frappe</li>
+            <li><i class="fas fa-check-circle"></i> Utilisez la navigation principale ci-dessus</li>
+            <li><i class="fas fa-check-circle"></i> Retournez à la page d'accueil</li>
+            <li><i class="fas fa-check-circle"></i> Contactez-moi si vous pensez qu'il s'agit d'une erreur</li>
+          </ul>
+        </div>
+        
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary btn-large">
+            <i class="fas fa-home"></i> Retour à l'accueil
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-large">
+            <i class="fas fa-envelope"></i> Me contacter
+          </a>
+        </div>
+        
+        <div class="quick-links">
+          <h3><i class="fas fa-external-link-alt" aria-hidden="true"></i> Pages populaires :</h3>
+          <div class="link-grid">
+            <a href="services.html" class="quick-link">
+              <i class="fas fa-building-shield"></i>
+              <span>ERP Catégorie 5</span>
+            </a>
+            <a href="services.html#permis" class="quick-link">
+              <i class="fas fa-drafting-compass"></i>
+              <span>Permis de Construire</span>
+            </a>
+            <a href="portfolio.html" class="quick-link">
+              <i class="fas fa-images"></i>
+              <span>Portfolio</span>
+            </a>
+            <a href="offres.html" class="quick-link">
+              <i class="fas fa-tags"></i>
+              <span>Offres & Tarifs</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="search-help">
+          <h3><i class="fas fa-search" aria-hidden="true"></i> Vous cherchez quelque chose de spécifique ?</h3>
+          <p>Essayez ces termes de recherche :</p>
+          <div class="search-tags">
+            <a href="services.html#erp">ERP catégorie 5</a>
+            <a href="services.html#permis">Permis de construire</a>
+            <a href="services.html#3d">Rendu 3D</a>
+            <a href="portfolio.html">Projets réalisés</a>
+            <a href="offres.html">Devis gratuit</a>
+            <a href="contact.html">Contact Montpellier</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact Urgent -->
+  <section class="urgent-help bg-light reveal">
+    <div class="container">
+      <div class="urgent-card">
+        <div class="urgent-icon">
+          <i class="fas fa-life-ring" aria-hidden="true"></i>
+        </div>
+        <div class="urgent-content">
+          <h2>Besoin d'aide rapidement ?</h2>
+          <p>Si vous ne trouvez pas ce que vous cherchez ou avez besoin d'une assistance immédiate pour votre projet :</p>
+          <div class="urgent-contact">
+            <a href="tel:+33000000000" class="btn btn-primary">
+              <i class="fas fa-phone"></i> Appeler : 00 00 00 00 00
+            </a>
+            <a href="mailto:diag@gmail.com" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Écrire un email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/img/logo.png" alt="DEC BIM" class="logo" width="40" height="40">
+          <strong>DEC BIM</strong>
+        </div>
+        <p>Dessinateur Projeteur BIM indépendant à Montpellier, spécialiste des projets architecturaux et réglementaires.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:diag@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#erp">ERP Catégorie 5</a></li>
+          <li><a href="services.html#permis">Permis de Construire</a></li>
+          <li><a href="services.html#3d">Rendu 3D & BIM</a></li>
+          <li><a href="services.html#declaration">Déclarations Préalables</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <address>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montpellier, Hérault (34)</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+        </address>
+        <p><i class="fas fa-clock" aria-hidden="true"></i> Lun-Ven : 9h-18h</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2024</span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> • 
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
+
+<style>
+/* Styles spécifiques pour la page 404 */
+.error-section {
+  padding: 5rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+}
+
+.error-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-illustration {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.error-number {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.digit {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #2a6e8c;
+  line-height: 1;
+  text-shadow: 0 10px 20px rgba(42, 110, 140, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+.digit:nth-child(1) { animation-delay: 0s; }
+.digit:nth-child(2) { animation-delay: 0.2s; }
+.digit:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.error-icon {
+  font-size: 4rem;
+  color: #718096;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+.error-content h1 {
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.error-message {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-suggestions {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2.5rem 0;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.error-suggestions h2 {
+  color: #2a6e8c;
+  margin-top: 0;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.error-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+
+.error-suggestions li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.error-suggestions li:last-child {
+  border-bottom: none;
+}
+
+.error-suggestions li i {
+  color: #38a169;
+  margin-top: 0.3rem;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.quick-links {
+  margin: 3rem 0;
+}
+
+.quick-links h3 {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #2a6e8c;
+  color: #2a6e8c;
+}
+
+.quick-link i {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: #2a6e8c;
+}
+
+.quick-link span {
+  font-weight: 500;
+}
+
+.search-help {
+  background: #f0f7fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.search-help h3 {
+  color: #2a6e8c;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.search-help p {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.search-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.search-tags a {
+  background: white;
+  color: #2a6e8c;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.search-tags a:hover {
+  background: #2a6e8c;
+  color: white;
+  border-color: #2a6e8c;
+}
+
+.urgent-help {
+  padding: 4rem 0;
+}
+
+.urgent-card {
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: 0 20px 60px rgba(229, 62, 62, 0.2);
+}
+
+.urgent-icon {
+  font-size: 3rem;
+}
+
+.urgent-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.urgent-content p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.urgent-contact {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .error-actions {
+    flex-direction: column;
+  }
+  
+  .error-actions .btn {
+    width: 100%;
+  }
+  
+  .urgent-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .urgent-contact {
+    justify-content: center;
+  }
+  
+  .digit {
+    font-size: 5rem;
+  }
+  
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 </body>
 </html>

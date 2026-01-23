@@ -1,321 +1,600 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Contact – DEC BIM</title>
+  <meta charset="UTF-8">
+  <title>Contact | DEC BIM - Devis gratuit ERP, Permis, 3D Montpellier</title>
+  <meta name="description" content="Contactez votre dessinateur-projeteur BIM à Montpellier. Devis gratuit sous 24h pour vos projets ERP, permis de construire et rendus 3D.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact - DEC BIM Dessinateur Projeteur">
+  <meta property="og:description" content="Devis gratuit pour vos projets de dessin bâtiment à Montpellier">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dec-bim.fr/contact.html">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json" defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "DEC – Dessinateur Projeteur BIM",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Montpellier",
-    "addressRegion": "Occitanie",
-    "addressCountry": "FR"
-  },
-  "areaServed": "Hérault",
-  "description": "Dessinateur-projeteur BIM indépendant spécialisé en rénovation, extension et ERP catégorie 5.",
-  "url": "https://dec-bim.fr",
-  "sameAs": []
-}
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Schema.org for Contact -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact DEC BIM",
+    "description": "Page de contact pour demandes de devis",
+    "mainEntity": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+33-00-00-00-00",
+      "email": "diag@gmail.com",
+      "availableLanguage": "French",
+      "areaServed": "FR",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+  }
+  </script>
 </head>
-<body>
+<body class="contact-page">
 
-<header>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-    
-    <div style="display:flex;align-items:center;gap:12px;">
-      <img src="assets/img/logo.png" alt="DEC BIM" style="height:42px;">
-      <strong style="font-size:18px;">DEC BIM</strong>
+<header class="main-header">
+  <div class="container header-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="DEC BIM - Dessinateur Projeteur BIM" class="logo" width="48" height="48">
+        <div class="logo-text">
+          <strong>DEC BIM</strong>
+          <span class="logo-subtitle">Dessinateur Projeteur BIM</span>
+        </div>
+      </a>
     </div>
 
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="offres.html">Offres</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-	  <a href="services.html">Services</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i> Accueil
+        </a>
+        <a href="services.html" class="nav-link">
+          <i class="fas fa-cogs"></i> Services
+        </a>
+        <a href="offres.html" class="nav-link">
+          <i class="fas fa-tags"></i> Offres
+        </a>
+        <a href="portfolio.html" class="nav-link">
+          <i class="fas fa-images"></i> Portfolio
+        </a>
+        <a href="contact.html" class="nav-link active cta-nav" aria-current="page">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </div>
     </nav>
-
   </div>
 </header>
 
-<section class="contact-section fade-in reveal">
-  <div class="container">
-    <h1>Contactez-moi</h1>
-    <p class="section-subtitle">Un projet ? Une question ? Parlons-en ensemble</p>
-
-    <div class="contact-wrapper">
-      <!-- Informations de contact -->
-      <div class="contact-info">
-        <div class="info-card">
-          <h2>DEC – Dessinateur Projeteur BIM</h2>
-          <div class="info-item">
-            <div class="info-icon">📍</div>
-            <div>
-              <strong>Zone d'intervention</strong>
-              <p>Montpellier et l'Hérault (34)<br>Intervention possible dans le Gard (30) et l'Aude (11)</p>
-            </div>
+<main id="main-content">
+  <!-- Hero Contact -->
+  <section class="page-hero contact-hero reveal">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Contactez-moi</h1>
+        <p class="hero-subtitle">
+          Un projet en tête ? Parlons-en ensemble lors d'un échange gratuit et sans engagement. 
+          Je réponds à toutes vos questions en moins de 24h.
+        </p>
+        <div class="contact-hero-stats">
+          <div class="stat">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span>Réponse sous 24h</span>
           </div>
-          
-          <div class="info-item">
-            <div class="info-icon">📧</div>
-            <div>
-              <strong>Email</strong>
-              <p>diag@gmail.com</p>
-            </div>
+          <div class="stat">
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            <span>Devis gratuit</span>
           </div>
-          
-          <div class="info-item">
-            <div class="info-icon">📱</div>
-            <div>
-              <strong>Téléphone</strong>
-              <p><a href="tel:+33000000000">00 00 00 00 00</a></p>
-            </div>
+          <div class="stat">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+            <span>Étude gratuite</span>
           </div>
-          
-          <div class="info-item">
-            <div class="info-icon">⏰</div>
-            <div>
-              <strong>Disponibilité</strong>
-              <p>Lundi au Vendredi<br>9h00 - 18h00</p>
-            </div>
-          </div>
-          
-          <div class="info-item">
-            <div class="info-icon">💼</div>
-            <div>
-              <strong>Réponse</strong>
-              <p>Je réponds sous 24h ouvrées</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="expertise-card">
-          <h3>Mon expertise</h3>
-          <ul>
-            <li>Permis de construire & DP</li>
-            <li>ERP Catégorie 5</li>
-            <li>Modélisation BIM (Revit)</li>
-            <li>Rendu 3D photoréaliste</li>
-            <li>Plans techniques conformes</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Formulaire -->
-      <div class="contact-form">
-        <div class="form-card">
-          <form id="contact-form" action="https://formspree.io/f/votre-id-formspree" method="POST">
-            <!-- Champ caché pour le sujet -->
-            <input type="hidden" name="_subject" value="Nouveau message depuis le site DEC">
-            
-            <!-- Champ anti-spam -->
-            <input type="text" name="_gotcha" style="display:none">
-            
-            <!-- Champ pour redirection après succès (optionnel) -->
-            <input type="hidden" name="_next" value="https://votresite.com/merci">
-            
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Nom complet *</label>
-                <input type="text" id="name" name="name" placeholder="Votre nom et prénom" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="company">Société</label>
-                <input type="text" id="company" name="company" placeholder="Votre entreprise (optionnel)">
-              </div>
-            </div>
-            
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="phone">Téléphone</label>
-                <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00">
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="service">Service concerné *</label>
-              <select id="service" name="service" required>
-                <option value="" disabled selected>Sélectionnez un service</option>
-                <option value="erp">ERP Catégorie 5</option>
-                <option value="permis">Permis de Construire / Déclaration Préalable</option>
-                <option value="3d">Imagerie 3D / Rendu photoréaliste</option>
-                <option value="revit">Modélisation BIM - Revit</option>
-                <option value="autre">Autre demande</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label for="project-type">Type de projet</label>
-              <select id="project-type" name="project-type">
-                <option value="" selected>Nature du projet</option>
-                <option value="maison">Maison individuelle</option>
-                <option value="extension">Extension / Surélévation</option>
-                <option value="renovation">Rénovation</option>
-                <option value="commerce">Commerce / Boutique</option>
-                <option value="bureau">Bureaux</option>
-                <option value="restaurant">Restaurant / Café</option>
-                <option value="autre">Autre</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Votre message *</label>
-              <textarea id="message" name="message" placeholder="Décrivez votre projet, vos besoins, vos contraintes, la localisation..." rows="6" required></textarea>
-              <div class="char-count"><span id="char-count">0</span> / 1000 caractères</div>
-            </div>
-            
-            <div class="form-group">
-              <label for="file">Pièces jointes (optionnel)</label>
-              <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf">
-              <small class="file-info">Formats acceptés : PDF, JPG, PNG, DWG, DXF (max 10Mo)</small>
-            </div>
-            
-            <div class="form-group checkbox">
-              <input type="checkbox" id="newsletter" name="newsletter">
-              <label for="newsletter">Je souhaite recevoir les actualités et conseils (optionnel)</label>
-            </div>
-            
-            <div class="form-submit">
-              <button type="submit" class="btn btn-primary" id="submit-btn">
-                <span class="btn-text">Envoyer ma demande</span>
-                <span class="btn-loading" style="display:none;">Envoi en cours...</span>
-              </button>
-              <p class="form-note">* Champs obligatoires</p>
-            </div>
-            
-            <!-- Message de confirmation (caché par défaut) -->
-            <div id="form-success" style="display:none;">
-              <div class="success-message">
-                <div class="success-icon">✓</div>
-                <h3>Message envoyé avec succès !</h3>
-                <p>Je vous répondrai dans les plus brefs délais.</p>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
+  <!-- Contact Grid -->
+  <section class="contact-grid reveal">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Informations Contact -->
+        <aside class="contact-info-sidebar" aria-labelledby="contact-info-title">
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <h2 id="contact-info-title"><i class="fas fa-user-tie" aria-hidden="true"></i> DEC BIM</h2>
+              <p class="card-subtitle">Dessinateur Projeteur BIM Indépendant</p>
+            </div>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Téléphone</h3>
+                  <p><a href="tel:+33000000000">00 00 00 00 00</a></p>
+                  <small>Lun-Ven : 9h-18h</small>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Email</h3>
+                  <p><a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+                  <small>Réponse sous 24h ouvrées</small>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Zone d'intervention</h3>
+                  <p>Montpellier - Hérault (34)</p>
+                  <small>Et départements limitrophes</small>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Prendre rendez-vous</h3>
+                  <p>Visite, téléphone ou visio</p>
+                  <small>Sur rendez-vous uniquement</small>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-social">
+              <h3>Suivez-moi</h3>
+              <div class="social-links">
+                <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link instagram" aria-label="Instagram">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:diag@gmail.com" class="social-link email" aria-label="Email">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="expertise-card">
+            <h3><i class="fas fa-star" aria-hidden="true"></i> Mon expertise</h3>
+            <ul class="expertise-list">
+              <li><i class="fas fa-check"></i> ERP Catégorie 5</li>
+              <li><i class="fas fa-check"></i> Permis de construire</li>
+              <li><i class="fas fa-check"></i> Déclarations préalables</li>
+              <li><i class="fas fa-check"></i> Rendu 3D photoréaliste</li>
+              <li><i class="fas fa-check"></i> Modélisation Revit</li>
+              <li><i class="fas fa-check"></i> Conformité PLU</li>
+            </ul>
+          </div>
+          
+          <div class="map-card">
+            <h3><i class="fas fa-map" aria-hidden="true"></i> Zone d'intervention</h3>
+            <div class="map-illustration">
+              <div class="map-region">
+                <span class="region-primary">Hérault (34)</span>
+                <span class="region-secondary">Gard (30)</span>
+                <span class="region-secondary">Aude (11)</span>
+              </div>
+              <p class="map-note">Intervention possible sur toute la France pour les projets complexes.</p>
+            </div>
+          </div>
+        </aside>
+        
+        <!-- Formulaire Principal -->
+        <div class="contact-form-main">
+          <div class="form-intro">
+            <h2><i class="fas fa-pen-alt" aria-hidden="true"></i> Demandez votre devis gratuit</h2>
+            <p>
+              Remplissez ce formulaire pour recevoir une étude personnalisée de votre projet sous 24h. 
+              Tous les champs marqués d'un astérisque (*) sont obligatoires.
+            </p>
+          </div>
+          
+          <div class="form-card">
+            <form id="contact-form" action="https://formspree.io/f/votre-id-formspree" method="POST" enctype="multipart/form-data" novalidate>
+              <!-- Champs cachés Formspree -->
+              <input type="hidden" name="_subject" value="📐 Nouvelle demande - Site DEC BIM">
+              <input type="hidden" name="_language" value="fr">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_next" value="https://dec-bim.fr/merci.html">
+              <input type="hidden" name="_autoresponse" value="Merci pour votre message. Je vous réponds sous 24h.">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="_cc" value="diag@gmail.com">
+              
+              <!-- Indicateur de progression -->
+              <div class="form-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="33">
+                <div class="progress-step active" data-step="1">
+                  <span class="step-number">1</span>
+                  <span class="step-label">Informations</span>
+                </div>
+                <div class="progress-step" data-step="2">
+                  <span class="step-number">2</span>
+                  <span class="step-label">Projet</span>
+                </div>
+                <div class="progress-step" data-step="3">
+                  <span class="step-number">3</span>
+                  <span class="step-label">Finalisation</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 33%"></div>
+                </div>
+              </div>
+              
+              <!-- Étape 1 -->
+              <div class="form-step active" id="step1">
+                <h3 class="step-title">Vos coordonnées</h3>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom et prénom" required aria-required="true">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="company">Société</label>
+                    <input type="text" id="company" name="company" placeholder="Votre entreprise (optionnel)">
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="votre@email.com" required aria-required="true">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="phone">Téléphone *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00" required aria-required="true">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="address">Adresse du projet</label>
+                  <input type="text" id="address" name="address" placeholder="Adresse, code postal, ville">
+                </div>
+                
+                <div class="form-step-buttons">
+                  <button type="button" class="btn btn-next" data-next="2">
+                    Suivant <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Étape 2 -->
+              <div class="form-step" id="step2">
+                <h3 class="step-title">Détails de votre projet</h3>
+                
+                <div class="form-group">
+                  <label for="service">Service concerné *</label>
+                  <select id="service" name="service" required aria-required="true">
+                    <option value="" disabled selected>Sélectionnez un service</option>
+                    <option value="erp">ERP Catégorie 5</option>
+                    <option value="permis">Permis de Construire</option>
+                    <option value="declaration">Déclaration Préalable</option>
+                    <option value="3d">Imagerie 3D / Rendu photoréaliste</option>
+                    <option value="revit">Modélisation BIM - Revit</option>
+                    <option value="autre">Autre demande</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="project-type">Type de projet *</label>
+                  <select id="project-type" name="project-type" required aria-required="true">
+                    <option value="" selected disabled>Nature du projet</option>
+                    <option value="maison">Maison individuelle</option>
+                    <option value="extension">Extension / Surélévation</option>
+                    <option value="renovation">Rénovation complète</option>
+                    <option value="commerce">Commerce / Boutique</option>
+                    <option value="bureau">Bureaux / Espaces de travail</option>
+                    <option value="restaurant">Restaurant / Café / Bar</option>
+                    <option value="medical">Cabinet médical / paramédical</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="surface">Surface approximative</label>
+                    <input type="number" id="surface" name="surface" placeholder="m²" min="0">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="budget">Budget prévisionnel</label>
+                    <select id="budget" name="budget">
+                      <option value="" selected>Non défini</option>
+                      <option value="0-10000">0 - 10 000 €</option>
+                      <option value="10000-30000">10 000 - 30 000 €</option>
+                      <option value="30000-50000">30 000 - 50 000 €</option>
+                      <option value="50000+">Plus de 50 000 €</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="deadline">Délai souhaité</label>
+                  <select id="deadline" name="deadline">
+                    <option value="" selected>Pas de contrainte</option>
+                    <option value="urgent">Urgent (moins d'1 mois)</option>
+                    <option value="1-3months">1 à 3 mois</option>
+                    <option value="3-6months">3 à 6 mois</option>
+                    <option value="6months+">Plus de 6 mois</option>
+                  </select>
+                </div>
+                
+                <div class="form-step-buttons">
+                  <button type="button" class="btn btn-prev" data-prev="1">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i> Retour
+                  </button>
+                  <button type="button" class="btn btn-next" data-next="3">
+                    Suivant <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Étape 3 -->
+              <div class="form-step" id="step3">
+                <h3 class="step-title">Finalisez votre demande</h3>
+                
+                <div class="form-group">
+                  <label for="message">Description de votre projet *</label>
+                  <textarea id="message" name="message" placeholder="Décrivez votre projet, vos besoins, vos contraintes, vos idées..." rows="6" required aria-required="true"></textarea>
+                  <div class="char-count">
+                    <span id="char-count">0</span> / 2000 caractères
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="file">Pièces jointes (optionnel)</label>
+                  <div class="file-upload-area" id="drop-area" role="button" tabindex="0">
+                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                    <p>Glissez-déposez vos fichiers ici ou</p>
+                    <span class="btn btn-outline">
+                      <i class="fas fa-folder-open" aria-hidden="true"></i> Parcourir
+                    </span>
+                    <input type="file" id="file" name="pieces_jointes[]" multiple 
+                           accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf,.doc,.docx" 
+                           style="display:none">
+                    <p class="file-info">Formats acceptés : PDF, JPG, PNG, DWG, DXF, DOC, DOCX (max 20Mo)</p>
+                  </div>
+                  <div id="file-list" class="file-list" aria-live="polite"></div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                  <input type="checkbox" id="newsletter" name="newsletter" checked>
+                  <label for="newsletter">
+                    Je souhaite recevoir les actualités et conseils par email (désinscription à tout moment)
+                  </label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                  <input type="checkbox" id="rgpd" name="rgpd" required aria-required="true">
+                  <label for="rgpd">
+                    J'accepte que mes données soient utilisées pour traiter ma demande *
+                    <a href="confidentialite.html" class="privacy-link">Politique de confidentialité</a>
+                  </label>
+                </div>
+                
+                <div class="form-step-buttons">
+                  <button type="button" class="btn btn-prev" data-prev="2">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i> Retour
+                  </button>
+                  <button type="submit" class="btn btn-primary" id="submit-btn">
+                    <span class="btn-text">Envoyer ma demande</span>
+                    <span class="btn-loading" style="display:none">
+                      <i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Envoi en cours...
+                    </span>
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Messages d'erreur/succès -->
+              <div id="form-messages" aria-live="polite"></div>
+            </form>
+          </div>
+          
+          <!-- Informations complémentaires -->
+          <div class="form-footer">
+            <div class="info-box">
+              <i class="fas fa-shield-alt" aria-hidden="true"></i>
+              <div>
+                <h4>Confidentialité garantie</h4>
+                <p>Vos données sont sécurisées et ne seront jamais partagées sans votre accord.</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              <div>
+                <h4>Réponse rapide</h4>
+                <p>Je m'engage à vous répondre sous 24h ouvrées maximum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Contact -->
+  <section class="contact-faq bg-light reveal" aria-labelledby="faq-contact-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-contact-title">Questions fréquentes sur le contact</h2>
+        <p class="section-subtitle">Trouvez rapidement des réponses à vos interrogations</p>
+      </div>
+      
+      <div class="faq-grid">
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quand vais-je recevoir une réponse ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Je m'engage à répondre à toutes les demandes sous 24 heures ouvrées. Pour les demandes urgentes, 
+              n'hésitez pas à me joindre directement par téléphone au 00 00 00 00 00.
+            </p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Le devis est-il vraiment gratuit ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui, l'étude préalable et le devis détaillé sont entièrement gratuits et sans engagement. 
+              C'est seulement après votre validation écrite du devis que nous commençons le travail.
+            </p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Puis-je vous rencontrer en personne ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolument ! Je propose des rendez-vous en visioconférence, par téléphone ou en présentiel 
+              sur Montpellier et ses environs. Pour les projets éloignés, le travail à distance est parfaitement efficace.
+            </p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quels documents préparer pour notre échange ?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Pour gagner du temps, vous pouvez préparer : les plans existants, les photos du lieu, 
+              les idées de plans, les contraintes spécifiques, votre budget approximatif et vos délais souhaités.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Urgent -->
+  <section class="urgent-cta reveal">
+    <div class="container">
+      <div class="urgent-card">
+        <div class="urgent-icon">
+          <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+        </div>
+        <div class="urgent-content">
+          <h2>Besoin urgent d'une réponse ?</h2>
+          <p>Pour les demandes urgentes, contactez-moi directement par téléphone.</p>
+        </div>
+        <div class="urgent-phone">
+          <a href="tel:+33000000000" class="btn btn-primary btn-large">
+            <i class="fas fa-phone"></i> Appeler maintenant : 00 00 00 00 00
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="main-footer">
   <div class="container">
-    © DEC – Dessinateur Projeteur BIM · Montpellier
-	<a href="mentions-legales.html">Mentions légales</a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/img/logo.png" alt="DEC BIM" class="logo" width="40" height="40">
+          <strong>DEC BIM</strong>
+        </div>
+        <p>Dessinateur Projeteur BIM indépendant à Montpellier, spécialiste des projets architecturaux et réglementaires.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:diag@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#erp">ERP Catégorie 5</a></li>
+          <li><a href="services.html#permis">Permis de Construire</a></li>
+          <li><a href="services.html#3d">Rendu 3D & BIM</a></li>
+          <li><a href="services.html#declaration">Déclarations Préalables</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <address>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montpellier, Hérault (34)</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+        </address>
+        <p><i class="fas fa-clock" aria-hidden="true"></i> Lun-Ven : 9h-18h</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2024</span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> • 
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </p>
+    </div>
   </div>
 </footer>
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-});
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/contact.js" defer></script>
 
-// Gestion du formulaire contact
-document.addEventListener('DOMContentLoaded', function() {
-  const contactForm = document.getElementById('contact-form');
-  const messageTextarea = document.getElementById('message');
-  const charCount = document.getElementById('char-count');
-  const submitBtn = document.getElementById('submit-btn');
-  const btnText = submitBtn.querySelector('.btn-text');
-  const btnLoading = submitBtn.querySelector('.btn-loading');
-  const formSuccess = document.getElementById('form-success');
-  
-  // Compteur de caractères
-  if (messageTextarea && charCount) {
-    messageTextarea.addEventListener('input', function() {
-      const length = this.value.length;
-      charCount.textContent = length;
-      
-      if (length > 1000) {
-        charCount.style.color = '#e74c3c';
-        this.value = this.value.substring(0, 1000);
-        charCount.textContent = 1000;
-      } else if (length > 800) {
-        charCount.style.color = '#f39c12';
-      } else {
-        charCount.style.color = '#888';
-      }
-    });
-  }
-  
-  // Gestion de la soumission
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Désactiver le bouton pendant l'envoi
-      submitBtn.disabled = true;
-      btnText.style.display = 'none';
-      btnLoading.style.display = 'inline';
-      
-      // Récupérer les données du formulaire
-      const formData = new FormData(this);
-      
-      // Envoyer via Formspree (ou votre backend)
-      fetch(this.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          // Afficher le message de succès
-          contactForm.style.display = 'none';
-          formSuccess.style.display = 'block';
-          
-          // Réinitialiser le formulaire
-          contactForm.reset();
-          charCount.textContent = '0';
-        } else {
-          throw new Error('Erreur lors de l\'envoi');
-        }
-      })
-      .catch(error => {
-        alert('Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.');
-        console.error('Form error:', error);
-      })
-      .finally(() => {
-        // Réactiver le bouton
-        submitBtn.disabled = false;
-        btnText.style.display = 'inline';
-        btnLoading.style.display = 'none';
-      });
-    });
-  }
-  
-  // Gestion dynamique du type de projet
-  const serviceSelect = document.getElementById('service');
-  const projectTypeSelect = document.getElementById('project-type');
-  
-  if (serviceSelect && projectTypeSelect) {
-    serviceSelect.addEventListener('change', function() {
-      // Réinitialiser le champ type de projet
-      projectTypeSelect.value = '';
-      
-      // Optionnel: ajuster les options selon le service
-      // Exemple: si ERP, montrer des options commerce/bureau/restaurant
-    });
-  }
-});
-</script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+votre-site/
+├── index.html
+├── services.html
+├── offres.html
+├── portfolio.html
+├── contact.html
+├── merci.html
+├── mentions-legales.html
+├── confidentialite.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── contact.js
+│   │   └── portfolio.js
+│   └── img/
+│       ├── logo.png
+│       ├── hero-visual.svg
+│       └── portfolio/
+│           ├── commerce-securite.jpg
+│           ├── maison-3d-exterieur.jpg
+│           └── extension-plans.jpg

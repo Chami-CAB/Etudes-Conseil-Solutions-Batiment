@@ -1,260 +1,607 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Portfolio – DEC BIM</title>
+  <meta charset="UTF-8">
+  <title>Portfolio & Réalisations | DEC BIM - Projets ERP, Permis, 3D Montpellier</title>
+  <meta name="description" content="Découvrez nos réalisations : ERP catégorie 5, permis de construire, rendus 3D. Exemples concrets de projets menés à bien à Montpellier et dans l'Hérault.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio - Réalisations DEC BIM">
+  <meta property="og:description" content="Projets ERP, permis de construire et rendus 3D réalisés">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dec-bim.fr/portfolio.html">
+  <meta property="og:image" content="https://dec-bim.fr/assets/img/portfolio/og-image.jpg">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json" defer data-domain="dec-bim.fr" src="https://plausible.io/js/script.js">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "DEC – Dessinateur Projeteur BIM",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Montpellier",
-    "addressRegion": "Occitanie",
-    "addressCountry": "FR"
-  },
-  "areaServed": "Hérault",
-  "description": "Dessinateur-projeteur BIM indépendant spécialisé en rénovation, extension et ERP catégorie 5.",
-  "url": "https://dec-bim.fr",
-  "sameAs": []
-}
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Schema.org for Portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portfolio DEC BIM",
+    "description": "Réalisations en dessin bâtiment, ERP, permis de construire et rendus 3D",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 9,
+      "itemListElement": [
+        {
+          "@type": "CreativeWork",
+          "name": "Boulangerie ERP Catégorie 5",
+          "description": "Dossier complet ERP pour commerce alimentaire"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Villa contemporaine - Rendu 3D",
+          "description": "Visualisation photoréaliste pour permis de construire"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Extension avec terrasse couverte",
+          "description": "Permis de construire pour extension moderne"
+        }
+      ]
+    }
+  }
+  </script>
 </head>
-<body>
+<body class="portfolio-page">
 
-<header>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-    
-    <div style="display:flex;align-items:center;gap:12px;">
-      <img src="assets/img/logo.png" alt="DEC BIM" style="height:42px;">
-      <strong style="font-size:18px;">DEC BIM</strong>
+<header class="main-header">
+  <div class="container header-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/logo.png" alt="DEC BIM - Dessinateur Projeteur BIM" class="logo" width="48" height="48">
+        <div class="logo-text">
+          <strong>DEC BIM</strong>
+          <span class="logo-subtitle">Dessinateur Projeteur BIM</span>
+        </div>
+      </a>
     </div>
 
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="offres.html">Offres</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-	  <a href="services.html">Services</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i> Accueil
+        </a>
+        <a href="services.html" class="nav-link">
+          <i class="fas fa-cogs"></i> Services
+        </a>
+        <a href="offres.html" class="nav-link">
+          <i class="fas fa-tags"></i> Offres
+        </a>
+        <a href="portfolio.html" class="nav-link active" aria-current="page">
+          <i class="fas fa-images"></i> Portfolio
+        </a>
+        <a href="contact.html" class="nav-link cta-nav">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+      </div>
     </nav>
-
   </div>
 </header>
 
-<section class="portfolio reveal">
-  <div class="container">
-    <h2>Portfolio & Réalisations</h2>
-    <p class="section-subtitle">Découvrez des exemples concrets de nos projets réalisés</p>
-
-    <!-- Filtres par service -->
-    <div class="portfolio-filters">
-      <button class="filter-btn active" data-filter="all">Tous les projets</button>
-      <button class="filter-btn" data-filter="erp">ERP Catégorie 5</button>
-      <button class="filter-btn" data-filter="permis">Permis de Construire</button>
-      <button class="filter-btn" data-filter="3d">Imagerie 3D</button>
-      <button class="filter-btn" data-filter="modelisation">Modélisation </button>
+<main id="main-content">
+  <!-- Hero Portfolio -->
+  <section class="page-hero portfolio-hero reveal">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Portfolio & Réalisations</h1>
+        <p class="hero-subtitle">
+          Découvrez des exemples concrets de projets menés à bien avec expertise et précision. 
+          De l'ERP à la maison individuelle, chaque projet est une success story.
+        </p>
+        <div class="portfolio-stats">
+          <div class="stat">
+            <span class="stat-number" data-count="100">100+</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="98">98%</span>
+            <span class="stat-label">Satisfaction clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Dossiers refusés</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Grille des projets -->
-    <div class="portfolio-grid">
+  <!-- Filtres Portfolio -->
+  <section class="portfolio-filters-section reveal">
+    <div class="container">
+      <div class="filter-controls">
+        <div class="filter-group">
+          <span class="filter-label">Filtrer par service :</span>
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">
+              Tous les projets
+            </button>
+            <button class="filter-btn" data-filter="erp">
+              ERP Catégorie 5
+            </button>
+            <button class="filter-btn" data-filter="permis">
+              Permis de Construire
+            </button>
+            <button class="filter-btn" data-filter="3d">
+              Imagerie 3D
+            </button>
+            <button class="filter-btn" data-filter="revit">
+              Modélisation Revit
+            </button>
+          </div>
+        </div>
+        
+        <div class="filter-group">
+          <span class="filter-label">Trier par :</span>
+          <select class="sort-select" aria-label="Trier les projets">
+            <option value="recent">Plus récents</option>
+            <option value="ancien">Plus anciens</option>
+            <option value="type">Type de projet</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grille Portfolio -->
+  <section class="portfolio-grid-section reveal" aria-label="Galerie de projets">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolio-container">
+        
+        <!-- Projet 1 - ERP -->
+        <article class="portfolio-item" data-category="erp revit" data-date="2024-03">
+          <div class="portfolio-img">
+            <img src="assets/img/portfolio/commerce-securite.jpg" alt="Plans sécurité incendie pour commerce - Détails des issues de secours et extincteurs" loading="lazy" width="350" height="250">
+            <div class="portfolio-overlay">
+              <span class="project-category">ERP Catégorie 5</span>
+              <h3>Boulangerie moderne</h3>
+              <p>Plans sécurité et accessibilité</p>
+            </div>
+            <button class="portfolio-zoom" aria-label="Agrandir l'image du projet boulangerie">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <div class="project-meta">
+              <span class="project-date"><i class="far fa-calendar"></i> Mars 2024</span>
+              <span class="project-location"><i class="fas fa-map-marker-alt"></i> Montpellier</span>
+            </div>
+            <h3>Boulangerie "Au Bon Pain"</h3>
+            <p>
+              Dossier complet ERP pour création d'un commerce alimentaire de 120m². Plans sécurité incendie, 
+              désenfumage et accessibilité PMR. Conformité totale avec la réglementation ERP catégorie 5.
+            </p>
+            <div class="project-tags">
+              <span>Revit</span>
+              <span>Sécurité Incendie</span>
+              <span>PMR</span>
+              <span>Commerce</span>
+            </div>
+            <div class="project-cta">
+              <button class="btn-details" data-project="1" aria-label="Voir les détails du projet boulangerie">
+                <i class="fas fa-info-circle"></i> Voir les détails
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 - 3D -->
+        <article class="portfolio-item" data-category="3d" data-date="2024-02">
+          <div class="portfolio-img">
+            <img src="assets/img/portfolio/maison-3d-exterieur.jpg" alt="Rendu 3D maison contemporaine avec piscine - Architecture moderne et intégration paysagère" loading="lazy" width="350" height="250">
+            <div class="portfolio-overlay">
+              <span class="project-category">Imagerie 3D</span>
+              <h3>Villa contemporaine</h3>
+              <p>Rendu photoréaliste extérieur</p>
+            </div>
+            <button class="portfolio-zoom" aria-label="Agrandir l'image du projet villa">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <div class="project-meta">
+              <span class="project-date"><i class="far fa-calendar"></i> Février 2024</span>
+              <span class="project-location"><i class="fas fa-map-marker-alt"></i> Pérols</span>
+            </div>
+            <h3>Villa "Les Pins"</h3>
+            <p>
+              Rendu 3D photoréaliste pour un projet de permis de construire. Intégration paysagère et 
+              matières réalistes. L'image a servi de support pour la vente sur plan et l'obtention de financements.
+            </p>
+            <div class="project-tags">
+              <span>3D Photoréaliste</span>
+              <span>Extérieur</span>
+              <span>Architecture</span>
+              <span>Visualisation</span>
+            </div>
+            <div class="project-cta">
+              <button class="btn-details" data-project="2" aria-label="Voir les détails du projet villa">
+                <i class="fas fa-info-circle"></i> Voir les détails
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 - Permis -->
+        <article class="portfolio-item" data-category="permis" data-date="2024-01">
+          <div class="portfolio-img">
+            <img src="assets/img/portfolio/extension-plans.jpg" alt="Plans techniques extension maison - Coupes, élévations et implantation" loading="lazy" width="350" height="250">
+            <div class="portfolio-overlay">
+              <span class="project-category">Permis de Construire</span>
+              <h3>Extension moderne</h3>
+              <p>Dossier complet PC</p>
+            </div>
+            <button class="portfolio-zoom" aria-label="Agrandir l'image du projet extension">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <div class="project-meta">
+              <span class="project-date"><i class="far fa-calendar"></i> Janvier 2024</span>
+              <span class="project-location"><i class="fas fa-map-marker-alt"></i> Lattes</span>
+            </div>
+            <h3>Extension avec terrasse couverte</h3>
+            <p>
+              Permis de construire pour extension de 40m² avec terrasse couverte. Plans conformes PLU 
+              et validation obtenue en 2 mois. Optimisation des volumes pour respect des règles d'urbanisme.
+            </p>
+            <div class="project-tags">
+              <span>Extension</span>
+              <span>Terrasse</span>
+              <span>PLU</span>
+              <span>Permis</span>
+            </div>
+            <div class="project-cta">
+              <button class="btn-details" data-project="3" aria-label="Voir les détails du projet extension">
+                <i class="fas fa-info-circle"></i> Voir les détails
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 4 - ERP Restaurant -->
+        <article class="portfolio-item" data-category="erp" data-date="2023-11">
+          <div class="portfolio-img">
+            <img src="assets/img/portfolio/restaurant-plan.jpg" alt="Plans accessibilité PMR restaurant - Cheminements et équipements adaptés" loading="lazy" width="350" height="250">
+            <div class="portfolio-overlay">
+              <span class="project-category">ERP Catégorie 5</span>
+              <h3>Restaurant gastronomique</h3>
+              <p>Accessibilité PMR complète</p>
+            </div>
+            <button class="portfolio-zoom" aria-label="Agrandir l'image du projet restaurant">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <div class="project-meta">
+              <span class="project-date"><i class="far fa-calendar"></i> Novembre 2023</span>
+              <span class="project-location"><i class="fas fa-map-marker-alt"></i> Montpellier</span>
+            </div>
+            <h3>Restaurant "Le Jardin Secret"</h3>
+            <p>
+              Dossier ERP complet pour rénovation de restaurant 80 places. Plans accessibilité PMR détaillés 
+              avec cheminements, sanitaires adaptés et signalétique. Validation commission d'accessibilité.
+            </p>
+            <div class="project-tags">
+              <span>PMR</span>
+              <span>Restauration</span>
+              <span>Accessibilité</span>
+              <span>ERP</span>
+            </div>
+            <div class="project-cta">
+              <button class="btn-details" data-project="4" aria-label="Voir les détails du projet restaurant">
+                <i class="fas fa-info-circle"></i> Voir les détails
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 5 - 3D Intérieur -->
+        <article class="portfolio-item" data-category="3d" data-date="2023-10">
+          <div class="portfolio-img">
+            <img src="assets/img/portfolio/appartement-3d-interieur.jpg" alt="Rendu 3D intérieur appartement moderne - Ambiance lumineuse et design contemporain" loading="lazy" width="350" height="250">
+            <div class="portfolio-overlay">
+              <span class="project-category">Imagerie 3D</span>
+              <h3>Appartement neuf</h3>
+              <p>Visualisation intérieure</p>
+            </div>
+            <button class="portfolio-zoom" aria-label="Agrandir l'image du projet appartement">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <div class="project-meta">
+              <span class="project-date"><i class="far fa-calendar"></i> Octobre 2023</span>
+              <span class="project-location"><i class="fas fa-map-marker-alt"></i> Montpellier</span>
+            </div>
+            <h3>Appartement lumineux T4</h3>
+            <p>
+              Rendu d'ambiance intérieure pour promoteur immobilier. Jeux de lumière naturelle, 
+              matériaux haut de gamme et aménagement optimisé. Outil de vente pour commercialisation.
+            </p>
+            <div class="project-tags">
+              <span>Intérieur</span>
+              <span>Aménagement</span>
+              <span>Lumière</span>
+              <span>Promotion</span>
+            </div>
+            <div class="project-cta">
+              <button class="btn-details" data-project="5" aria-label="Voir les détails du projet appartement">
+                <i class="fas fa-info-circle"></i> Voir les détails
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 6 - Maison neuve -->
+        <article class="portfolio-item" data-category="permis" data-date="2023-09">
+          <div class="portfolio-img">
+            <img src="assets/img/portfolio/maison-neuve-facades.jpg" alt="Plans façades maison individuelle - Élévations avant, arrière et latérales" loading="lazy" width="350" height="250">
+            <div class="portfolio-overlay">
+              <span class="project-category">Permis de Construire</span>
+              <h3>Maison individuelle</h3>
+              <p>Plans d'élévation</p>
+            </div>
+            <button class="portfolio-zoom" aria-label="Agrandir l'image du projet maison neuve">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <div class="project-meta">
+              <span class="project-date"><i class="far fa-calendar"></i> Septembre 2023</span>
+              <span class="project-location"><i class="fas fa-map-marker-alt"></i> Castelnau-le-Lez</span>
+            </div>
+            <h3>Maison "Le Clos Fleuri"</h3>
+            <p>
+              Dossier permis de construire pour maison neuve 120m². Intégration dans un lotissement avec 
+              contraintes spécifiques (alignements, matériaux, hauteurs). Validation sans remarque.
+            </p>
+            <div class="project-tags">
+              <span>Maison neuve</span>
+              <span>Façades</span>
+              <span>Lotissement</span>
+              <span>Architecture</span>
+            </div>
+            <div class="project-cta">
+              <button class="btn-details" data-project="6" aria-label="Voir les détails du projet maison neuve">
+                <i class="fas fa-info-circle"></i> Voir les détails
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
       
-      <!-- Projet ERP 1 -->
-      <div class="portfolio-item" data-category="erp">
-        <div class="portfolio-img">
-          <img src="/images/portfolio/commerce-plan-securite.jpg" alt="Plans sécurité incendie commerce" loading="lazy">
-          <div class="portfolio-overlay">
-            <span class="project-category">ERP Catégorie 5</span>
-            <h3>Commerce alimentaire</h3>
-            <p>Plans sécurité et accessibilité PMR</p>
-          </div>
-        </div>
-        <div class="portfolio-info">
-          <h3>Boulangerie "Au Bon Pain"</h3>
-          <p>Dossier complet ERP pour création d'un commerce. Plans désenfumage, évacuation et accessibilité.</p>
-          <div class="project-tags">
-            <span>Modélisation</span>
-            <span>Sécurité Incendie</span>
-            <span>PMR</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet 3D 1 -->
-      <div class="portfolio-item" data-category="3d">
-        <div class="portfolio-img">
-          <img src="/images/portfolio/maison-3d-exterieur.jpg" alt="Rendu 3D maison contemporaine" loading="lazy">
-          <div class="portfolio-overlay">
-            <span class="project-category">Imagerie 3D</span>
-            <h3>Maison contemporaine</h3>
-            <p>Visualisation extérieure</p>
-          </div>
-        </div>
-        <div class="portfolio-info">
-          <h3>Villa "Les Pins"</h3>
-          <p>Rendu photoréaliste pour un projet de permis de construire. Intégration paysagère et matériaux réalistes.</p>
-          <div class="project-tags">
-            <span>3D Photoréaliste</span>
-            <span>Extérieur</span>
-            <span>Paysage</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet Permis -->
-      <div class="portfolio-item" data-category="permis">
-        <div class="portfolio-img">
-          <img src="/images/portfolio/extension-plans.jpg" alt="Plans permis extension maison" loading="lazy">
-          <div class="portfolio-overlay">
-            <span class="project-category">Permis de Construire</span>
-            <h3>Extension maison</h3>
-            <p>Dossier complet PC</p>
-          </div>
-        </div>
-        <div class="portfolio-info">
-          <h3>Extension avec terrasse couverte</h3>
-          <p>Plans pour permis de construire : situation, masse, coupes et façades. Validation obtenue en 2 mois.</p>
-          <div class="project-tags">
-            <span>Extension</span>
-            <span>Plans 2D</span>
-            <span>Conformité PLU</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet ERP 2 -->
-      <div class="portfolio-item" data-category="erp modelisation">
-        <div class="portfolio-img">
-          <img src="/images/portfolio/bureau-modelisation-model.jpg" alt="Modélisation bureaux" loading="lazy">
-          <div class="portfolio-overlay">
-            <span class="project-category">ERP + Modelisation</span>
-            <h3>Bureaux open space</h3>
-            <p>Modélisation BIM complète</p>
-          </div>
-        </div>
-        <div class="portfolio-info">
-          <h3>Siège social entreprise</h3>
-          <p>Modélisation existant + projet pour rénovation d'espaces de bureaux. Plans techniques détaillés.</p>
-          <div class="project-tags">
-            <span>BIM</span>
-            <span>Modélisation</span>
-            <span>Rénovation</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet 3D 2 -->
-      <div class="portfolio-item" data-category="3d">
-        <div class="portfolio-img">
-          <img src="/images/portfolio/appartement-3d-interieur.jpg" alt="Rendu 3D intérieur appartement" loading="lazy">
-          <div class="portfolio-overlay">
-            <span class="project-category">Imagerie 3D</span>
-            <h3>Appartement neuf</h3>
-            <p>Visualisation intérieure</p>
-          </div>
-        </div>
-        <div class="portfolio-info">
-          <h3>Appartement lumineux</h3>
-          <p>Rendu d'ambiance intérieure pour promoteur. Jeux de lumière naturelle et aménagement optimisé.</p>
-          <div class="project-tags">
-            <span>Intérieur</span>
-            <span>Aménagement</span>
-            <span>Lumière</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet Permis 2 -->
-      <div class="portfolio-item" data-category="permis">
-        <div class="portfolio-img">
-          <img src="/images/portfolio/maison-neuve-facades.jpg" alt="Plans façades maison neuve" loading="lazy">
-          <div class="portfolio-overlay">
-            <span class="project-category">Permis de Construire</span>
-            <h3>Maison individuelle</h3>
-            <p>Plans d'élévation</p>
-          </div>
-        </div>
-        <div class="portfolio-info">
-          <h3>Maison "Le Clos Fleuri"</h3>
-          <p>Dossier permis de construire pour maison neuve 120m². Intégration dans un lotissement avec contraintes spécifiques.</p>
-          <div class="project-tags">
-            <span>Maison neuve</span>
-            <span>Façades</span>
-            <span>Lotissement</span>
-          </div>
-        </div>
-      </div>
-
+      <!-- Pagination -->
+      <nav class="portfolio-pagination" aria-label="Pagination des projets">
+        <button class="pagination-btn active" aria-label="Page 1" aria-current="page">1</button>
+        <button class="pagination-btn" aria-label="Page 2">2</button>
+        <button class="pagination-btn" aria-label="Page 3">3</button>
+        <span class="pagination-dots" aria-hidden="true">...</span>
+        <button class="pagination-btn" aria-label="Page 6">6</button>
+        <button class="pagination-next" aria-label="Page suivante">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </nav>
     </div>
+  </section>
 
-    <!-- CTA Portfolio -->
-    <div class="portfolio-cta">
-      <p>Ces projets vous inspirent ? Chaque projet est unique.</p>
-      <a href="/contact" class="btn btn-primary">Discutons de votre projet</a>
-      <a href="/portfolio" class="btn btn-secondary">Voir tous les projets</a>
+  <!-- Témoignages Clients -->
+  <section class="portfolio-testimonials bg-light reveal" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Témoignages</span>
+        <h2 id="testimonials-title">Ils nous ont fait confiance</h2>
+        <p class="section-subtitle">Retours d'expérience de clients satisfaits</p>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="slider-container">
+          <article class="testimonial-slide active">
+            <div class="testimonial-content">
+              <blockquote class="testimonial-text">
+                "Le rendu 3D de notre future maison a permis à toute la famille de visualiser le projet 
+                et de prendre des décisions éclairées sur les matériaux et l'agencement. Un outil indispensable !"
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="client-avatar" aria-hidden="true">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div>
+                  <strong>Marie et Pierre D.</strong>
+                  <span>Projet maison individuelle - Montpellier</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="testimonial-slide">
+            <div class="testimonial-content">
+              <blockquote class="testimonial-text">
+                "L'accompagnement pour notre dossier ERP a été exemplaire. Réactivité, expertise et 
+                professionnalisme. Notre commerce a ouvert ses portes dans les délais prévus."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="client-avatar" aria-hidden="true">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div>
+                  <strong>Sophie L.</strong>
+                  <span>Gérante boutique - Pérols</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="testimonial-slide">
+            <div class="testimonial-content">
+              <blockquote class="testimonial-text">
+                "Les plans pour notre extension étaient d'une précision remarquable. 
+                La mairie n'a formulé aucune remarque et le permis a été accordé en 2 mois seulement."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="client-avatar" aria-hidden="true">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div>
+                  <strong>Thomas R.</strong>
+                  <span>Propriétaire - Lattes</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="slider-controls">
+          <button class="slider-prev" aria-label="Témoignage précédent">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="slider-dots">
+            <button class="dot active" aria-label="Afficher le témoignage 1" aria-current="true"></button>
+            <button class="dot" aria-label="Afficher le témoignage 2"></button>
+            <button class="dot" aria-label="Afficher le témoignage 3"></button>
+          </div>
+          <button class="slider-next" aria-label="Témoignage suivant">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Portfolio -->
+  <section class="portfolio-cta-section reveal">
+    <div class="container">
+      <div class="portfolio-cta-card">
+        <div class="cta-content">
+          <h2>Votre projet pourrait être le prochain</h2>
+          <p>Chaque projet est unique. Parlons du vôtre lors d'un échange gratuit.</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-large">
+            <i class="fas fa-calendar-check"></i> Planifier un échange
+          </a>
+          <a href="tel:+33000000000" class="btn btn-secondary btn-large">
+            <i class="fas fa-phone"></i> 00 00 00 00 00
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'image" hidden>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fermer la visionneuse">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <button class="lightbox-prev" aria-label="Image précédente">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <div class="lightbox-image-container">
+        <img src="" alt="" class="lightbox-image" id="lightbox-img">
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-description"></p>
+        </div>
+      </div>
+      <button class="lightbox-next" aria-label="Image suivante">
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
-</section>
 
-<footer>
+  <!-- Project Detail Modal -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-label="Détails du projet" hidden>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fermer la fenêtre">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <div class="modal-body">
+        <!-- Contenu chargé dynamiquement -->
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="main-footer">
   <div class="container">
-    © DEC – Dessinateur Projeteur BIM · Montpellier
-	<a href="mentions-legales.html">Mentions légales</a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/img/logo.png" alt="DEC BIM" class="logo" width="40" height="40">
+          <strong>DEC BIM</strong>
+        </div>
+        <p>Dessinateur Projeteur BIM indépendant à Montpellier, spécialiste des projets architecturaux et réglementaires.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:diag@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#erp">ERP Catégorie 5</a></li>
+          <li><a href="services.html#permis">Permis de Construire</a></li>
+          <li><a href="services.html#3d">Rendu 3D & BIM</a></li>
+          <li><a href="services.html#declaration">Déclarations Préalables</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <address>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montpellier, Hérault (34)</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33000000000">00 00 00 00 00</a></p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:diag@gmail.com">diag@gmail.com</a></p>
+        </address>
+        <p><i class="fas fa-clock" aria-hidden="true"></i> Lun-Ven : 9h-18h</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2024</span> DEC BIM - Dessinateur Projeteur BIM. Tous droits réservés.</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> • 
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </p>
+    </div>
   </div>
 </footer>
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-});
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/portfolio.js" defer></script>
 
-// Filtrage des projets portfolio
-document.addEventListener('DOMContentLoaded', function() {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
-  
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Retirer la classe active de tous les boutons
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      // Ajouter la classe active au bouton cliqué
-      this.classList.add('active');
-      
-      const filterValue = this.getAttribute('data-filter');
-      
-      // Filtrer les éléments
-      portfolioItems.forEach(item => {
-        const categories = item.getAttribute('data-category');
-        
-        if (filterValue === 'all' || categories.includes(filterValue)) {
-          item.style.display = 'flex';
-          // Animation d'apparition
-          item.style.animation = 'fadeIn 0.5s ease forwards';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  });
-  
-  // Ajout d'une animation CSS
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  `;
-  document.head.appendChild(style);
-});
-
-</script>
 </body>
 </html>

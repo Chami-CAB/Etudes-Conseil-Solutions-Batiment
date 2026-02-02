@@ -947,7 +947,7 @@ body::before {
 
 .table-header {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(4, 1fr);
   background: #2a6e8c;
   color: white;
 }
@@ -1004,7 +1004,7 @@ body::before {
 
 .table-row {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(4, 1fr);
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -1095,7 +1095,7 @@ body::before {
 }
 
 .accordion-content.active {
-  padding: 2rem;
+  padding: 0 1rem 0 1rem;
   max-height: 1000px;
 }
 
@@ -1154,7 +1154,6 @@ body::before {
 }
 
 .accordion-cta {
-  margin-top: 2rem;
   text-align: center;
 }
 
